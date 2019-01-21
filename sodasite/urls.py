@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/',include('accounts.urls')),
     path('blog/',include('blog.urls')),
-    path('', lambda req: redirect('blog:post_list')),
+    path('', lambda req: redirect('blog:post_list'), name='root'),
 ]
