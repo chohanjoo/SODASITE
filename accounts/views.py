@@ -7,8 +7,6 @@ from django.contrib.auth.models import User
 from .forms import SignupForm
 # Create your views here.
 
-def login(request):
-    return render(request, 'accounts/index.html')
 
 @login_required
 def profile(request):
