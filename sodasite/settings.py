@@ -128,4 +128,4 @@ LOGIN_URL = reverse_lazy('login')
 
 LOGOUT_REDIRECT_URL = reverse_lazy('login')
 
-#LOGIN_REDIRECT_URL = reverse_lazy('profile')
+LOGIN_REDIRECT_URL = reverse_lazy('profile')
