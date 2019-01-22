@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login as auth_login
-from django.contrib.auth.views import PasswordChangeView
+from django.contrib.auth.views import PasswordResetView, PasswordResetConfirmView, PasswordChangeView
 from django.views.generic import CreateView
 from django.contrib.auth.models import User
 from .forms import SignupForm
@@ -57,4 +57,22 @@ class MyPasswordChangeView(PasswordChangeView):
 
     def form_valid(self, form):
         messages.info(self.request, '암호 변경을 완료했습니다.')
+        return super().form_valid(form)
+
+
+class MyPasswordResetView(PasswordResetView):
+    success_url = reverse_lazy('login')
+    template_name = 'accounts/password_reset_form.html'
+    # email_template_name = 
+    # html_email_template_name = 
+    def form_valid(self, form):
+        messages.info(self.request, '암호 변경 메일을 발송했습니다.')
+        return super().form_valid(form)
+
+class MyPasswordResetConfirmView(PasswordResetConfirmView):
+    success_url = reverse_lazy('login')
+    template_name = 'accounts/password_reset_confirm.html'
+    
+    def form_valid(self, form):
+        messages.info(self.request, '암호 리셋을 완료했습니다.')
         return super().form_valid(form)
