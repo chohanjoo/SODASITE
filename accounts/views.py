@@ -1,11 +1,15 @@
 from django.shortcuts import render,redirect, resolve_url
+from django.conf import settings
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
-from django.conf import settings
+from django.contrib.auth import login as auth_login
+from django.contrib.auth.views import PasswordChangeView
 from django.views.generic import CreateView
 from django.contrib.auth.models import User
 from .forms import SignupForm
-from django.contrib.auth import login as auth_login
+from django.urls import reverse_lazy
+
 # Create your views here.
 
 
@@ -45,3 +49,12 @@ class SignupView(CreateView):
         return redirect(self.get_success_url())
 
 signup = SignupView.as_view()
+
+
+class MyPasswordChangeView(PasswordChangeView):
+    success_url = reverse_lazy('profile')
+    template_name = 'accounts/password_change_form.html'
+
+    def form_valid(self, form):
+        messages.info(self.request, '암호 변경을 완료했습니다.')
+        return super().form_valid(form)
