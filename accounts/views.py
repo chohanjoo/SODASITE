@@ -1,10 +1,11 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect, resolve_url
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.conf import settings
 from django.views.generic import CreateView
 from django.contrib.auth.models import User
 from .forms import SignupForm
+from django.contrib.auth import login as auth_login
 # Create your views here.
 
 
@@ -13,19 +14,32 @@ def profile(request):
     return render(request, 'accounts/profile.html')
 
 # def signup(request):
-#     if request.method == "POST":
-#         form = SignupForm(request.POST)
-#         if form.is_valid():
-#             user = form.save()
-#             return redirect(settings.LOGIN_URL)
-#     else:
-#         form = SignupForm()
+    # if request.method == "POST":
+    #     form = SignupForm(request.POST)
+    #     if form.is_valid():
+    #         user = form.save()
 
-#     return render(request, 'accounts/signup.html',{
-#         'form' : form,
-#     })
+    #            #로그인 처리
+    #            auth_login(request, user) 
+    #         return redirect(settings.LOGIN_URL)
+    # else:
+    #     form = SignupForm()
 
-signup = CreateView.as_view(model=User,
-        form_class=SignupForm,
-        success_url=settings.LOGIN_URL,
-        template_name='accounts/signup.html')
+    # return render(request, 'accounts/signup.html',{
+    #     'form' : form,
+    # })
+
+class SignupView(CreateView):
+    model = User
+    form_class = SignupForm
+    template_name = 'accounts/signup.html'
+
+    def get_success_url(self):
+        return resolve_url('profile')
+
+    def form_valid(self,form):
+        user = form.save()
+        auth_login(self.request, user)
+        return redirect(self.get_success_url())
+
+signup = SignupView.as_view()
