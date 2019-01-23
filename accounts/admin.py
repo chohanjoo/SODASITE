@@ -3,7 +3,9 @@ from .models import User, Profile
 from django.contrib.auth.admin import UserAdmin as AuthUserAdmin
 from dateutil.relativedelta import relativedelta
 from django.utils import timezone
+from django.contrib.auth.models import Permission
 
+admin.site.register(Permission)
 
 class UserDateJoinedFilter(admin.SimpleListFilter):
     title = '유저 가입일'
