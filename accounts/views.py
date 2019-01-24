@@ -9,6 +9,8 @@ from django.views.generic import CreateView
 from django.contrib.auth.models import User
 from .forms import SignupForm
 from django.urls import reverse_lazy
+from .readExcel import readDataToExcel
+from .models import Student
 
 # Create your views here.
 
@@ -76,3 +78,11 @@ class MyPasswordResetConfirmView(PasswordResetConfirmView):
     def form_valid(self, form):
         messages.info(self.request, '암호 리셋을 완료했습니다.')
         return super().form_valid(form)
+
+
+def inputDatabase(request):
+    data = readDataToExcel()
+    for person in data:
+        Student(name=person['name'],studentNumber=person['studentNumber'],phoneNumber=person['phoneNumber']).save()
+
+    return render(request,'accounts/init.html',{'data':data})

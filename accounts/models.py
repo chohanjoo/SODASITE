@@ -8,6 +8,7 @@ from django.contrib.auth.signals import user_logged_in
 from importlib import import_module
 
 
+
 SessionStore = import_module(settings.SESSION_ENGINE).SessionStore
 
 # Create your models here.
@@ -68,3 +69,12 @@ def kicked_my_other_sessions(sender, request, user, **kwargs):
     UserSession.objects.create(user=user, session_key=session_key)
 
 user_logged_in.connect(kicked_my_other_sessions)
+
+class Student(models.Model):
+    name = models.CharField(max_length=20)
+    studentNumber = models.CharField(max_length=8)
+    phoneNumber = models.CharField(max_length=15)
+
+
+
+    

@@ -1,11 +1,12 @@
 from django.contrib import admin
-from .models import User, Profile
+from .models import User, Profile, Student
 from django.contrib.auth.admin import UserAdmin as AuthUserAdmin
 from dateutil.relativedelta import relativedelta
 from django.utils import timezone
 from django.contrib.auth.models import Permission
 
 admin.site.register(Permission)
+
 
 class UserDateJoinedFilter(admin.SimpleListFilter):
     title = '유저 가입일'
@@ -50,3 +51,7 @@ class UserAdmin(AuthUserAdmin):
 class ProfileAdmin(admin.ModelAdmin):
     list_display = ['user','bio']
 # Register your models here.
+
+@admin.register(Student)
+class StudentAdmin(admin.ModelAdmin):
+    list_display = ['name','studentNumber','phoneNumber']
