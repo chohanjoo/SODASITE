@@ -15,6 +15,7 @@ class UserManager(AuthUserManager):
     def create_superuser(self, username, email, password, **extra_fields):
         extra_fields.setdefault('sex','m')
         return super().create_superuser(username,email,password,**extra_fields)
+
 class User(AbstractUser):
     sex = models.CharField(
         max_length=1,
