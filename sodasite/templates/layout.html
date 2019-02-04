@@ -6,7 +6,18 @@
     <title>Soda Blog</title>
 </head>
 <body>
-    <h1>SODA BLOG</h1>
+    <h1>
+        <a href="{% url "root" %}">SODA BLOG</a>
+    </h1>
+    {% if user.is_authenticated %}
+        <a href="{% url "profile" %}">{{ user }}</a>
+        <a href="{% url "logout" %}?next={{ request.path }}">로그아웃</a>
+    {% else %}
+        <a href="{% url "signup" %}">회원가입</a>
+        <a href="{% url "login" %}?next={{ request.path }}">로그인</a>
+    {% endif %}
+    <hr/>
+    
     {% block content %}
     {% endblock %}
 
