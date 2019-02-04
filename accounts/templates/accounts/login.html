@@ -1,8 +1,58 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-<form action="" method="post">
-    {% csrf_token %}
-    <table>
-        {{ form.as_table }}
-    </table>
-    <input type="submit" />
-</form>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+<div class="container">
+    <br>
+    <hr>
+
+    <div class="row">
+        <aside class="col-sm-4">
+
+        </aside> <!-- col.// -->
+        <aside class="col-sm-4">
+            <br><br><br><br>
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="card">
+                    <article class="card-body">
+                        <h4 class="card-title text-center mb-4 mt-1">Sign in</h4>
+                        <hr>
+                        <p class="text-success text-center">Fill in the blanks below.</p>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                </div>
+                                <input name="username" class="form-control" placeholder="Email or login">
+                            </div> <!-- input-group.// -->
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                </div>
+                                <input name="password" class="form-control" placeholder="******" type="password">
+                            </div> <!-- input-group.// -->
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                        </div> <!-- form-group// -->
+                        <p class="text-center"><a href="#" class="btn">Forgot password?</a></p>
+
+
+                    </article>
+                </div> <!-- card.// -->
+            </form>
+        </aside> <!-- col.// -->
+    </div> <!-- row.// -->
+
+</div>
+<!--container end.//-->
+
+<br><br><br>
