@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 't2y^gbzv@9b3!i4dz5ih+08mzdb8@f2n)$c0w3t*7g*zorg039'
+SECRET_KEY = 'z46o&&c0%jt72%+*17_-zfly$68a*4o_cws$r*hm^ri1+6g4-k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
     'blog',
+    'accounts',
+    'about',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'SODASITE','templates'),
+            os.path.join(BASE_DIR,'sodasite','templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -124,11 +125,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'sodasite', 'static'),
+]
+
 from django.urls import reverse_lazy
+
 LOGIN_URL = reverse_lazy('login')
 
-LOGOUT_REDIRECT_URL = reverse_lazy('login')
+LOGIN_REDIRECT_URL = '/'
 
+<<<<<<< HEAD
 LOGIN_REDIRECT_URL = reverse_lazy('profile')
 
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -144,3 +151,6 @@ AUTH_USER_MODEL = 'accounts.User'
 # EMAIL_USE_TLS = True
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
+=======
+LOGOUT_REDIRECT_URL = reverse_lazy('login')
+>>>>>>> auth_test
