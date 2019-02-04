@@ -8,7 +8,7 @@ from .forms import SignupForm
 from django.contrib.auth import login as auth_login
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.forms import (
-    AuthenticationForm, PasswordChangeForm, PasswordResetForm, SetPasswordForm,
+    AuthenticationForm
 )   
 # Create your views here.
 
@@ -41,7 +41,7 @@ class MyLoginView(LoginView):
     template_name = 'accounts/login.html'
 
     def get_success_url(self):
-        return resolve_url('index')
+        return resolve_url('blog:index')
 
     def form_valid(self,form):
         auth_login(self.request, form.get_user())
