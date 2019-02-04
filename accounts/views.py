@@ -23,7 +23,7 @@ class SignupView(CreateView):
     template_name = 'accounts/signup.html'
 
     def get_success_url(self):
-        return resolve_url('profile')
+        return resolve_url('blog:index')
 
     def form_valid(self,form):
         user = form.save()
