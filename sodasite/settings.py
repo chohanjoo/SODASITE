@@ -135,22 +135,6 @@ LOGIN_URL = reverse_lazy('login')
 
 LOGIN_REDIRECT_URL = '/'
 
-<<<<<<< HEAD
-LOGIN_REDIRECT_URL = reverse_lazy('profile')
 
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-AUTH_USER_MODEL = 'accounts.User'
-
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = 'user_name@gmail.com'
-# EMAIL_HOST_PASSWORD = 'user_password'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-
-=======
 LOGOUT_REDIRECT_URL = reverse_lazy('login')
->>>>>>> auth_test
+
