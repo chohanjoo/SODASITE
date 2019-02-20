@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'debug_toolbar',
     'blog',
     'accounts',
     'about',
@@ -50,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'sodasite.urls'
@@ -135,3 +137,45 @@ LOGIN_URL = reverse_lazy('login')
 LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = reverse_lazy('login')
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'filters':{
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+        },
+        'write_to_file': {
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
+            'class': 'logging.FileHandler',
+            'filename': 'db.log',
+        },
+        'write': {
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
+            'class': 'logging.FileHandler',
+            'filename': 'info.log',
+        },
+        
+    },
+    'loggers': {
+        'django.db.backends': {
+            'handlers': ['write_to_file'],
+            'level': 'DEBUG',
+        },
+        'accounts': {
+            'handlers': ['write'],
+            'level': 'DEBUG',
+        }
+    }
+}
+
+INTERNAL_IPS = ['127.0.0.1']

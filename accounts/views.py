@@ -10,6 +10,9 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth.forms import (
     AuthenticationForm
 )   
+import logging
+
+logger = logging.getLogger(__name__)
 # Create your views here.
 
 @login_required
@@ -17,20 +20,32 @@ def profile(request):
     return render(request,'accounts/profile.html')
 
 
-class SignupView(CreateView):
-    model = User
-    form_class = SignupForm
-    template_name = 'accounts/signup.html'
+def signup(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            return redirect(settings.LOGIN_URL)
+    else:
+        form = UserCreationForm()
+    return render(request, 'accounts/signup.html',{
+        'form':form,
+    })
+# class SignupView(CreateView):
+#     model = User
+#     form_class = SignupForm
+#     template_name = 'accounts/signup.html'
 
-    def get_success_url(self):
-        return resolve_url('blog:index')
+#     def get_success_url(self):
+#         return resolve_url('blog:index')
 
-    def form_valid(self,form):
-        user = form.save()
-        auth_login(self.request, user)
-        return redirect(self.get_success_url())
+#     def form_valid(self,form):
+#         logger.debug('Here is Create ID')
+#         user = form.save()
+#         auth_login(self.request, user)
+#         return redirect(self.get_success_url())
 
-signup = SignupView.as_view()
+#signup = SignupView.as_view()
 # signup = CreateView.as_view(model=User, form_class=UserCreationForm
 #         , success_url = settings.LOGIN_URL
 #         ,template_name="accounts/signup.html")
@@ -44,6 +59,7 @@ class MyLoginView(LoginView):
         return resolve_url('blog:index')
 
     def form_valid(self,form):
+        logger.debug('Login Success!!')
         auth_login(self.request, form.get_user())
         return redirect(self.get_success_url())
 
