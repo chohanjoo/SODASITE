@@ -23,7 +23,7 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('blog/',include('blog.urls')),
     path('about/',include('about.urls')),
-    path('', lambda req: redirect('blog:index'), name='root'),
+    path('', lambda req: redirect('blog:post_list'), name='root'),
 ]
 
 if settings.DEBUG:
