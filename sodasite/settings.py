@@ -174,7 +174,12 @@ LOGGING = {
         'accounts': {
             'handlers': ['write'],
             'level': 'DEBUG',
+        },
+        'blog': {
+            'handlers' : ['write'],
+            'level': 'DEBUG',
         }
+
     }
 }
 
