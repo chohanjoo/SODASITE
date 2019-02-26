@@ -56,7 +56,7 @@ class MyLoginView(LoginView):
     template_name = 'accounts/login.html'
 
     def get_success_url(self):
-        return resolve_url('blog:index')
+        return resolve_url('blog:post_list')
 
     def form_valid(self,form):
         logger.debug('Login Success!!')

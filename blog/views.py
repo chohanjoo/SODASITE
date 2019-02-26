@@ -5,6 +5,7 @@ from .models import Post,Project
 from django.contrib.auth.decorators import login_required
 from django.views.generic import CreateView,UpdateView,DeleteView
 from .forms import PostForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 # Create your views here.
 import logging
 
@@ -60,7 +61,7 @@ def post_detail(request,pk):
 #         'form' : form,
 #     })
 
-class NewPostView(CreateView):
+class NewPostView(LoginRequiredMixin,CreateView):
     model = Project
     form_class = PostForm
     template_name = 'blog/new_post.html'
