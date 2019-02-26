@@ -1519,3 +1519,635 @@ CREATE TABLE "blog_project" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "t
 (0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 16; args=(16,)
 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-02-25 15:53:42.722396' AND "django_session"."session_key" = 'zpcb5uiwbb2zqjj4ulq8mrgpm1xo9anb'); args=('2019-02-25 15:53:42.722396', 'zpcb5uiwbb2zqjj4ulq8mrgpm1xo9anb')
 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 16; args=(16,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-02-25 15:59:09.784925' AND "django_session"."session_key" = 'zpcb5uiwbb2zqjj4ulq8mrgpm1xo9anb'); args=('2019-02-25 15:59:09.784925', 'zpcb5uiwbb2zqjj4ulq8mrgpm1xo9anb')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-02-25 15:59:12.232710' AND "django_session"."session_key" = 'zpcb5uiwbb2zqjj4ulq8mrgpm1xo9anb'); args=('2019-02-25 15:59:12.232710', 'zpcb5uiwbb2zqjj4ulq8mrgpm1xo9anb')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC; args=()
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-02-25 15:59:39.027508' AND "django_session"."session_key" = 'zpcb5uiwbb2zqjj4ulq8mrgpm1xo9anb'); args=('2019-02-25 15:59:39.027508', 'zpcb5uiwbb2zqjj4ulq8mrgpm1xo9anb')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'zpcb5uiwbb2zqjj4ulq8mrgpm1xo9anb'; args=('zpcb5uiwbb2zqjj4ulq8mrgpm1xo9anb',)
+(0.000) BEGIN; args=None
+(0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('zpcb5uiwbb2zqjj4ulq8mrgpm1xo9anb'); args=('zpcb5uiwbb2zqjj4ulq8mrgpm1xo9anb',)
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 16; args=(16,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project"  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project"  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project"  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project"  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project"  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project"  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project"  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project"  LIMIT 21; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 1; args=(1,)
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 16; args=(16,)
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 21; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 21; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 21; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 10; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 1; args=(1,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 10; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 10; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 10; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 16; args=(16,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC; args=()
+(0.001) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 16; args=(16,)
+(0.001) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 16; args=(16,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 16; args=(16,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.001) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 9; args=(9,)
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 13; args=(13,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3 OFFSET 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3 OFFSET 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3 OFFSET 6; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3 OFFSET 6; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3 OFFSET 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3 OFFSET 6; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 1 OFFSET 9; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3 OFFSET 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3 OFFSET 6; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3 OFFSET 6; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3 OFFSET 6; args=()
+(0.001) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 3; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5 OFFSET 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.001) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 13; args=(13,)
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 16; args=(16,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5 OFFSET 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5 OFFSET 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5 OFFSET 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 9; args=(9,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin'; args=('admin',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'lurxqy62z7gvc8t5slijyxtqo23pyzht'  LIMIT 1; args=('lurxqy62z7gvc8t5slijyxtqo23pyzht',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'lurxqy62z7gvc8t5slijyxtqo23pyzht', 'NmNjNjc4Y2Y0NmJhZGQ0Yjg4ZjUxNzJjYTI1MWI2ZmNkMzk0YzVhZDp7fQ==', '2019-03-12 07:31:31.610686'; args=('lurxqy62z7gvc8t5slijyxtqo23pyzht', 'NmNjNjc4Y2Y0NmJhZGQ0Yjg4ZjUxNzJjYTI1MWI2ZmNkMzk0YzVhZDp7fQ==', '2019-03-12 07:31:31.610686')
+(0.000) BEGIN; args=None
+(0.001) UPDATE "auth_user" SET "last_login" = '2019-02-26 07:31:31.633066' WHERE "auth_user"."id" = 1; args=('2019-02-26 07:31:31.633066', 1)
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin'; args=('admin',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '4bykkr0558t5w834obmml0lvqgjzgpnm'  LIMIT 1; args=('4bykkr0558t5w834obmml0lvqgjzgpnm',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '4bykkr0558t5w834obmml0lvqgjzgpnm', 'NmNjNjc4Y2Y0NmJhZGQ0Yjg4ZjUxNzJjYTI1MWI2ZmNkMzk0YzVhZDp7fQ==', '2019-03-12 07:32:35.089242'; args=('4bykkr0558t5w834obmml0lvqgjzgpnm', 'NmNjNjc4Y2Y0NmJhZGQ0Yjg4ZjUxNzJjYTI1MWI2ZmNkMzk0YzVhZDp7fQ==', '2019-03-12 07:32:35.089242')
+(0.000) BEGIN; args=None
+(0.000) UPDATE "auth_user" SET "last_login" = '2019-02-26 07:32:35.103953' WHERE "auth_user"."id" = 1; args=('2019-02-26 07:32:35.103953', 1)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'MmYzNmIyZTZjZDFjNjU1ZjU1YWZmOWNiYWVlZGJkZTdkMTc5NzE3Yzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI5N2RjNGVjNDY3NTlkMWFkNGQzZGU1NzY4OGU5MDE4ZWYyZGViN2ZkIn0=', "expire_date" = '2019-03-12 07:32:35.119411' WHERE "django_session"."session_key" = '4bykkr0558t5w834obmml0lvqgjzgpnm'; args=('MmYzNmIyZTZjZDFjNjU1ZjU1YWZmOWNiYWVlZGJkZTdkMTc5NzE3Yzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI5N2RjNGVjNDY3NTlkMWFkNGQzZGU1NzY4OGU5MDE4ZWYyZGViN2ZkIn0=', '2019-03-12 07:32:35.119411', '4bykkr0558t5w834obmml0lvqgjzgpnm')
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-02-26 07:32:35.131650' AND "django_session"."session_key" = '4bykkr0558t5w834obmml0lvqgjzgpnm'); args=('2019-02-26 07:32:35.131650', '4bykkr0558t5w834obmml0lvqgjzgpnm')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-02-26 07:32:36.585343' AND "django_session"."session_key" = '4bykkr0558t5w834obmml0lvqgjzgpnm'); args=('2019-02-26 07:32:36.585343', '4bykkr0558t5w834obmml0lvqgjzgpnm')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-02-26 07:32:44.539217' AND "django_session"."session_key" = '4bykkr0558t5w834obmml0lvqgjzgpnm'); args=('2019-02-26 07:32:44.539217', '4bykkr0558t5w834obmml0lvqgjzgpnm')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "blog_project" ("title", "writer", "content", "photo", "project_file", "created_at", "updated_at") VALUES ('hi', 'hanjoo', 'hi', '', '', '2019-02-26 07:32:44.568257', '2019-02-26 07:32:44.568297'); args=['hi', 'hanjoo', 'hi', '', '', '2019-02-26 07:32:44.568257', '2019-02-26 07:32:44.568297']
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" WHERE "blog_project"."id" = 17; args=(17,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-02-26 07:32:44.590478' AND "django_session"."session_key" = '4bykkr0558t5w834obmml0lvqgjzgpnm'); args=('2019-02-26 07:32:44.590478', '4bykkr0558t5w834obmml0lvqgjzgpnm')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-02-26 07:32:46.396558' AND "django_session"."session_key" = '4bykkr0558t5w834obmml0lvqgjzgpnm'); args=('2019-02-26 07:32:46.396558', '4bykkr0558t5w834obmml0lvqgjzgpnm')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-02-26 07:33:54.580246' AND "django_session"."session_key" = '4bykkr0558t5w834obmml0lvqgjzgpnm'); args=('2019-02-26 07:33:54.580246', '4bykkr0558t5w834obmml0lvqgjzgpnm')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-02-26 07:33:55.532938' AND "django_session"."session_key" = '4bykkr0558t5w834obmml0lvqgjzgpnm'); args=('2019-02-26 07:33:55.532938', '4bykkr0558t5w834obmml0lvqgjzgpnm')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 5; args=()
