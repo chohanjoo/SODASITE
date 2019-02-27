@@ -27,12 +27,14 @@
 
             <form actions="" method="post" enctype="multipart/form-data" autocomplete="off">
                 {% csrf_token %}
-                <table class="table table-bordered">
+                <table class="table ">
                     {{ form.as_table }}
                 </table>
+                <br/>
                 <input type="submit" value="저장하기" class="btn btn-primary" />
                 <a href="{% url "blog:post_list" %}" class="btn btn-secondary">목록으로</a>
             </form>
+            
         </div>
     </div>
 </div>
