@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'blog',
     'accounts',
     'about',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -76,7 +77,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'sodasite.wsgi.application'
 
-
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -141,6 +148,15 @@ LOGOUT_REDIRECT_URL = reverse_lazy('login')
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'vjswl132@gmail.com'
+EMAIL_HOST_PASSWORD = 'whwh1598'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
