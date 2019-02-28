@@ -17,11 +17,11 @@ def index(request):
 
 class ProjectListVew(ListView):
     model=Project
-    template_name = "blog/index.html"
+    template_name = "blog/post_list.html"
     context_object_name = 'post_list'   # your own name for the list as a template variable
     queryset = Project.objects.all().order_by('-id')
 
-    paginate_by = 5
+    paginate_by = 8
  
     def get_queryset(self, *args, **kwargs):
         if self.kwargs:
@@ -42,11 +42,25 @@ post_list = ProjectListVew.as_view()
 #         'post_list' : post
 #     })
 
+# class ProjectDetailView(DetailView):
+#     model = Project
+#     template_name = 'blog/post_detail.html'
+#     context_object_name = 'post'
+#     queryset = Project.objects.get(pk=pk)
+
+#     def get_context_data(self, **kwargs):
+#         ctx = super().get_context_data(**kwargs)
+#         ctx['tag_name'] = self.request.GET.get('get_parameter_name', None)
+#         return ctx
+
+
 def post_detail(request,pk):
     post = Project.objects.get(pk=pk)
+    previous_post = Project.objects.filter(created_at=post.created_at).order_by('-created_at').first()
     # logger.info("pk %s".pk)
     return render(request, 'blog/post_detail.html',{
-        'post' : post
+        'post' : post,
+        'previous_post' : previous_post,
     })
 
 # def new_post(request):

@@ -28,12 +28,11 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
 
+<section class="s-content s-content--top-padding">
 <div class="container">
-    <br>
-    <hr>
-
+  
     <div class="row">
-        <aside class="col-sm-4">
+        <aside class="col-sm-5">
 
         </aside> <!-- col.// -->
         <aside class="col-sm-4">
@@ -42,7 +41,7 @@
                 {% csrf_token %}
                 <div class="card">
                     <article class="card-body">
-                        <h4 class="card-title text-center mb-4 mt-1">Login</h4>
+                        <h2 class="card-title text-center mb-4 mt-1">Login</h2>
                         <hr>
                         <p class="text-success text-center">Fill in the blanks below.</p>
 
@@ -63,9 +62,9 @@
                             </div> <!-- input-group.// -->
                         </div> <!-- form-group// -->
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                            <button type="submit" class="btn btn-primary btn-block btn-lg pull-width"> Login </button>
                         </div> <!-- form-group// -->
-                        <p class="text-left"><a href="#" class="btn">Forgot password?</a>
+                        <p class="text-left"><a href="#" class="btn ">Forgot password?</a>
                         <a href="{% url "signup" %}" class="float-right btn btn-outline-primary">Sign up</a></p>
                         
 
@@ -76,6 +75,7 @@
     </div> <!-- row.// -->
 
 </div>
+</section>
 <!--container end.//-->
 
 <br><br><br>
