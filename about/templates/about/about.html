@@ -1,37 +1,71 @@
-{% extends 'layout.html' %}
-{% load static %}
-
-{% block header %}
-<!-- Page Header -->
-<header class="masthead" style="background-image: url({% static "about/img/about-bg.jpg" %})">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="page-heading">
-          <h1>About Me</h1>
-          <span class="subheading">This is what I do.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-{% endblock %}
+{% extends "about/layout.html" %}
 
 {% block content %}
-<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates
-        odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto
-        error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas
-        voluptatibus, minus!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque
-        esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
-    </div>
-  </div>
-</div>
-{% endblock %}
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content s-content--top-padding s-content--narrow">
+
+        <div class="row narrow">
+            <div class="col-full s-content__header">
+                <h1 class="display-1 display-1--with-line-sep">About Soda</h1>
+                <p class="lead">저희 소모임은 오픈소스를 사용하여 프로젝트를 진행하는 소모임입니다.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-full s-content__main">
+              
+
+                <h2>수상 내역</h2>
+
+                <p>
+                    2016년도 빅데이터 경진대회 우수상<br>
+                    2016년도 KITPM학술대회 우수논문상<br>
+                    2016년도 한국 공항공사 주관 항공분야 빅데이터 아이디어 공모전 장려상<br>
+                    2017 융합 캡스톤 디자인 경진대회 우수상<br>
+                    2017 빅데이터 경진대회 장려상<br>
+                    2018년도 KITPM 학술대회 우수논문상<br>
+                    2018 남양주 IOT 해커톤 대회 장려상<br>
+                    2018 남양준 IOT 해커톤 대회 최우수상<br>
+                    2018 소프트웨어학부 소프트웨어공모전 은상<br>
+                    2018 소프트웨어학부 소프트웨어공모전 대상<br>
+                    2018 슈퍼스타 창업경진대회 소프트웨어부문 우수상<br>
+                    2018 스파르탄 창업캠프 왕중왕전 최우수상<br>
+                    2018 스파르탄 창업캠프 왕중왕전 우수상<br>
+                    2018 SW중심대학 공동해커톤 우수상<br>
+                    2018 제 8회 숭실 캡스톤디자인 경진대회 장려상<br>
+                    2018 한중 연합 캡스톤 3등<br>
+                    2018 빅데이터 경진대회-데이터분석 및 소프트웨어 개발 대상<br>
+   
+                <hr>
+
+                <h4 >임원진</h4>
+                        <p>2017년 회장 : 김지용, 부회장 : 조재호 <br>
+                           2018년 상반기 회장 : 김지용, 부회장 : 조재호 <br>
+                           2018년 하반기 회장 : 조한주 <br>
+                           2019년 상반기 회장 : 이서영, 부회장 : 김은진, 총무 : 임인호<br> 
+
+                        </p>
+
+                        <hr>
+                <div class="row block-1-2 block-tab-full">
+      
+                    <div class="col-block">
+                        <h4 class="quarter-top-margin">내용 1</h4>
+                        <p>...</p>
+                    </div>
+
+                    <div class="col-block">
+                        <h4 class="quarter-top-margin">내용 2</h4>
+                        <p>...</p>
+                    </div>
+
+                </div>
+
+            </div> <!-- s-content__main -->
+        </div> <!-- end row -->
+
+    </section> <!-- end s-content -->
+
+
+    {% endblock %}

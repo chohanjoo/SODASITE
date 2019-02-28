@@ -56,11 +56,9 @@ post_list = ProjectListVew.as_view()
 
 def post_detail(request,pk):
     post = Project.objects.get(pk=pk)
-    previous_post = Project.objects.filter(created_at=post.created_at).order_by('-created_at').first()
     # logger.info("pk %s".pk)
     return render(request, 'blog/post_detail.html',{
-        'post' : post,
-        'previous_post' : previous_post,
+        'post' : post
     })
 
 # def new_post(request):
