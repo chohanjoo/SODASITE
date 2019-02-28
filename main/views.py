@@ -17,6 +17,12 @@ class ProjectListVew(ListView):
         else:
             post_list = Project.objects.all().order_by('-id')
             return post_list
-
+            
+    def get_context_data(self, *args, **kwargs):
+        # Call the base implementation first to get a context
+        context = super(ProjectListVew, self).get_context_data(*args, **kwargs)
+        # add whatever to your context:
+        context['popular_post'] = Project.objects.all().order_by('-created_at')[:3]
+        return context
 
 index = ProjectListVew.as_view()
