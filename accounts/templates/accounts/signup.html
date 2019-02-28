@@ -2,22 +2,6 @@
 
 {% load static %}
 
-{% block header %}
-<!-- Page Header -->
-<header class="masthead" style="background-image: url({% static "about/img/about-bg.jpg" %})">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="page-heading">
-                    <h1>SODA BLOG</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-{% endblock %}
 
 {% block content %}
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -27,13 +11,11 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
-
+<section class="s-content s-content--top-padding">
 <div class="container">
-    <br>
-    <hr>
 
     <div class="row">
-        <aside class="col-sm-4">
+        <aside class="col-sm-5">
 
         </aside> <!-- col.// -->
         <aside class="col-sm-4">
@@ -42,7 +24,7 @@
                 {% csrf_token %}
                 <div class="card">
                     <article class="card-body">
-                        <h4 class="card-title text-center mb-4 mt-1">Sign Up</h4>
+                        <h2 class="card-title text-center mb-4 mt-1">Sign Up</h2>
                         <hr>
                         <p class="text-success text-center">Fill in the blanks below.</p>
 
@@ -87,7 +69,7 @@
 
 </div>
 <!--container end.//-->
-
+</section>
 <br><br><br>
 
 {% endblock %}
