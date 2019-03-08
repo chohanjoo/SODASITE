@@ -3693,6 +3693,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 }
 
 .entry__author-desc {
+  font-size: 1rem;
   padding-left: 10px;
   width: 75%;
 }
@@ -3987,6 +3988,16 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   border-radius: 100%;
   vertical-align: bottom;
 }
+.profile__avatar {
+  left: 0;
+  display: block;
+}
+.profile__avatar img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 100%;
+  vertical-align: bottom;
+}
 
 .comment__info {
   position: relative;
@@ -4085,6 +4096,11 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
     width: 6rem;
   }
 
+  .profile__avatar img {
+    height: 20rem;
+    width: 20rem;
+  }
+
   .comment__meta {
     text-align: left;
     width: auto;
@@ -4114,6 +4130,12 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
     margin-top: 0;
     height: 5.1rem;
     width: 5.1rem;
+  }
+
+  .profile__avatar img {
+    margin-top: 0;
+    height: 20rem;
+    width: 20rem;
   }
 
 }

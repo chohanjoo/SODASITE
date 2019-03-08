@@ -1,21 +1,47 @@
 {% extends "accounts/layout.html" %}
-
+{% load static %}
 {% block content %}
-    <!-- s-content
+<!-- s-content
     ================================================== -->
-    <section class="s-content s-content--top-padding s-content--narrow">
+<section class="s-content s-content--top-padding s-content--narrow">
 
-            <div class="row narrow">
+        <div class="row narrow">
                 <div class="col-full s-content__header">
-                    <h1 class="display-1 display-1--with-line-sep">{{ user }}'s Profile </h1>
-                    <p class="lead">
-                            {{ user.profile.bio|default:'empty' }}
+
+                        <div class="profile__avatar">
+                                {% if profile.photo %}
+                                <img class="avatar" src="{{ profile.photo.url }}"
+                                        style="margin-left: auto; margin-right: auto; display: block;">
+                                {% else %}
+                                <img class="avatar" src="{% static 'images/default_profile.jpg' %}"
+                                        style="margin-left: auto; margin-right: auto; display: block;">
+                                {% endif %}
+                        </div>
+
+                        <br> <br>
+                        <h1 class="display-1 display-1--with-line-sep">{{ profile.user }}</h1>
+                        
+
+                        <br> <br>
+
+                        <p class="lead">
+                                {{ profile.bio|default:''|safe}}
+                        </p>
+
+                        <p>
+                                        {% if profile.website_url %}
+                                        git : <a href="{{ profile.website_url }}">{{ profile.website_url }}</a>
+                                        {% endif %}
                         </p>
                 </div>
-            </div>
-    
-           
-    
-        </section> <!-- end s-content -->
+        </div>
+
+        <br><br><br>
+        {% if user.pk == profile.user.pk %}
+        <div class="clearfix">
+                <a class="btn btn--primary pull-right" href="{% url 'profile_edit' profile.pk %}">수정</a>
+        </div>
+        {% endif %}
+</section> <!-- end s-content -->
 
 {% endblock %}

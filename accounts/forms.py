@@ -8,7 +8,10 @@ from django.template.loader import render_to_string
 from django.core.mail import EmailMultiAlternatives
 from django.utils.html import strip_tags
 
-from .models import Student
+from .models import Student, Profile
+from django import forms
+
+from django_summernote.widgets import SummernoteWidget
 class SignupForm(UserCreationForm):
     pass
         # email = forms.EmailField(
@@ -16,3 +19,12 @@ class SignupForm(UserCreationForm):
         #     help_text=_("Enter the same password as before, for verification."),
         # )
 
+
+class ProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = '__all__'
+        widgets = {
+            'bio': SummernoteWidget(),
+           
+        }

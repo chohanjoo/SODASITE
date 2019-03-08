@@ -51,7 +51,7 @@
 
         <div class="header__logo">
             <a class="logo" href="{% url 'main:index' %}">
-                <img src="{% static 'images/logo.svg' %}" alt="Homepage">
+                <img src="{% static 'images/soda_logo2.svg' %}" alt="Homepage" >
             </a>
         </div> <!-- end header__logo -->
 
@@ -105,7 +105,7 @@
                 <li class="has-children">
                     <a href="#0" title="">My Page</a>
                     <ul class="sub-menu">
-                        <li><a href="{% url 'profile' %}" title="">{{ user.username }}</a></li>
+                        <li><a href="{% url 'profile' user.pk %}" title="">{{ user.username }}</a></li>
                         <li><a href="{% url 'logout' %}" title="">Logout</a></li>
                     </ul>
                 </li>
@@ -152,17 +152,7 @@
                         c언어 고스톱 구현<br>
                     </p>
 
-                    <div class="subscribe-form">
-                        <form id="mc-form" class="group" novalidate="true">
-
-                            <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
-                
-                            <input type="submit" name="subscribe" value="Send">
-                
-                            <label for="mc-email" class="subscribe-message"></label>
-                
-                        </form>
-                    </div>
+                    
 
                 </div> <!-- end s-footer__subscribe -->
 

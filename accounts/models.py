@@ -11,11 +11,19 @@ from django.utils.html import strip_tags
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 from .tokens import account_activation_token
+from django.urls import reverse
 
 class Profile(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete =models.CASCADE)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete =models.CASCADE,primary_key=True)
+    photo = models.ImageField(blank=True)
     bio = models.TextField(blank=True)
     website_url = models.URLField(blank=True)
+    
+    def __str__(self):
+        return self.user.username
+
+    def get_absolute_url(self):
+        return reverse('profile', kwargs={'pk': self.user.pk})
 
 def on_post_save_for_user(sender, **kwargs):
     if kwargs['created']:

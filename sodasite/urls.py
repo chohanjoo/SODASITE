@@ -25,6 +25,7 @@ urlpatterns = [
     path('blog/',include('blog.urls')),
     path('about/',include('about.urls')),
     path('', include('main.urls')),
+    path('summernote/', include('django_summernote.urls')),
     # path('', lambda req: redirect('blog:post_list'), name='root'),
 ]
 

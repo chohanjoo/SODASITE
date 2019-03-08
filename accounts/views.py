@@ -1,22 +1,20 @@
 from django.shortcuts import render,resolve_url,redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
-from django.views.generic import CreateView
+from django.views.generic import CreateView,UpdateView
 from django.conf import settings
 from django.contrib.auth.models import User
-from .forms import SignupForm
+from .forms import SignupForm, ProfileForm
 from django.contrib.auth import login as auth_login
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.forms import (
     AuthenticationForm
 )   
-from rest_framework.views import APIView
-from rest_framework import permissions
-from rest_framework.response import Response
+
 
 import logging
 from .readExcel import readDataToExcel
-from .models import Student
+from .models import Student,Profile
 
 from django.utils.encoding import force_text
 from django.utils.http import urlsafe_base64_decode
@@ -30,12 +28,22 @@ from django.core.mail import EmailMultiAlternatives
 from django.utils.html import strip_tags
 
 
+
 logger = logging.getLogger(__name__)
 # Create your views here.
 
-@login_required
-def profile(request):
-    return render(request,'accounts/profile.html')
+def profile(request,pk):
+    user_profile = Profile.objects.get(pk=pk)
+    return render(request,'accounts/profile.html',{
+        'profile': user_profile,
+    })
+
+class ProfileEditView(UpdateView):
+    model = Profile
+    form_class = ProfileForm
+    template_name = 'accounts/profile_edit.html'
+
+profile_edit = ProfileEditView.as_view()
 
 
 def user_activate(request, uidb64, token):

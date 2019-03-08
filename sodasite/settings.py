@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'z46o&&c0%jt72%+*17_-zfly$68a*4o_cws$r*hm^ri1+6g4-k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'accounts',
     'about',
     'main',
-    'rest_framework',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
@@ -78,13 +78,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'sodasite.wsgi.application'
 
-REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
-    ]
-}
+
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -204,3 +198,5 @@ LOGGING = {
 }
 
 INTERNAL_IPS = ['127.0.0.1']
+
+SUMMERNOTE_THEME = 'bs4'

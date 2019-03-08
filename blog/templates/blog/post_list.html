@@ -21,23 +21,11 @@
 
                 
                 <div class="item-entry" data-aos="zoom-in">
-                    <div class="item-entry__thumb">
-                        <a href="{% url 'blog:post_detail' post.pk  %}" class="item-entry__thumb-link">
-                            {% if post.photo %}
-                            <img src="{{ post.photo.url }}"
-                                srcset="{{ post.photo.url }} 1x, {{ post.photo.url }} 2x" width="400" height="450"
-                                alt="">
-                            {% else %}
-                            <img src="{% static 'images/default.jpg' %}"
-                                srcset="{% static 'images/default.jpg' %} 1x, {% static 'images/default.jpg' %} 2x" width="400" height="450"
-                                alt="">
-                            {% endif %}
-                        </a>
-                    </div>
+                    
 
                     <div class="item-entry__text">
                         <div class="item-entry__cat">
-                            <a href="category.html">Project</a>
+                         
                         </div>
 
                         <h1 class="item-entry__title"><a href="{% url 'blog:post_detail' post.pk %}">{{ post.title }}</a>
@@ -57,14 +45,15 @@
 
         </div> <!-- end entries -->
     </div> <!-- end entries-wrap -->
-
+    {% if user.is_authenticated %}
+    <div class="clearfix">
+        <a class="btn btn--primary pull-right" href="{% url "blog:new_post" %}">New Post</a>
+</div>
+{% endif %}
     {% if is_paginated %}
     <div class="row pagination-wrap">
             <div class="col-full">
     <nav class="pgn" data-aos="fade-up">
-            <div class="clearfix">
-                    <a class="btn btn--primary pull-right" href="{% url "blog:new_post" %}">New Post</a>
-            </div>
         <ul class="pagination justify-content-center pagination-sm">
             
             {% if page_obj.has_previous %}
