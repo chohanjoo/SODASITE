@@ -128,6 +128,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'sodasite', 'static'),
 ]
@@ -145,6 +147,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
+# 이메일 사용시 설정
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'your email'
 EMAIL_HOST_PASSWORD = 'your email password'
@@ -200,3 +203,7 @@ LOGGING = {
 INTERNAL_IPS = ['127.0.0.1']
 
 SUMMERNOTE_THEME = 'bs4'
+
+SUMMERNOTE_CONFIG = {
+    'attachment_filesize_limit': 10485760, # specify the file size (10M)
+}

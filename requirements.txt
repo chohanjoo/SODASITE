@@ -1,2 +1,3 @@
 django-summernote
 django-debug-toolbar
+openpyxl
