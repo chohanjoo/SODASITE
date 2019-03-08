@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'accounts',
     'about',
     'main',
-    'rest_framework',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
@@ -78,13 +78,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'sodasite.wsgi.application'
 
-REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
-    ]
-}
+
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -204,3 +198,5 @@ LOGGING = {
 }
 
 INTERNAL_IPS = ['127.0.0.1']
+
+SUMMERNOTE_THEME = 'bs4'

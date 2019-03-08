@@ -1,4 +1,4 @@
-{% extends 'blog/layout.html' %}
+{% extends 'accounts/layout.html' %}
 {% load static %}
 
 
@@ -14,19 +14,9 @@
                 {% csrf_token %}
                 <table class="table table-bordered">
                     {{ form.as_table }}
-                    <!-- <tbody>
-                        <tr>
-                            <td>
-                                    내용
-                            </td>
-                            <td>
-                                <input type="text" value = {{ post.content}}>
-                            </td>
-                        </tr>
-                    </tbody> -->
                 </table>
                 <input type="submit" value="저장하기" class="btn btn-primary" />
-                <a href="{% url "blog:post_list" %}" class="btn btn-secondary">목록으로</a>
+                <a href="{% url "profile" user.pk %}" class="btn btn-secondary">목록으로</a>
             </form>
         </div>
     </div>
