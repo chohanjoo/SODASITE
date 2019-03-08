@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'z46o&&c0%jt72%+*17_-zfly$68a*4o_cws$r*hm^ri1+6g4-k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -198,8 +198,5 @@ LOGGING = {
 }
 
 INTERNAL_IPS = ['127.0.0.1']
-<<<<<<< HEAD
 
 SUMMERNOTE_THEME = 'bs4'
-=======
->>>>>>> 0cabe3f011e5679360200661ec0176c1c2f0f43c

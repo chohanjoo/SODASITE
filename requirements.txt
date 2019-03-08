@@ -1,1 +1,2 @@
 django-summernote
+django-debug-toolbar
