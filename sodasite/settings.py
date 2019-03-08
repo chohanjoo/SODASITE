@@ -146,8 +146,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'vjswl132@gmail.com'
-EMAIL_HOST_PASSWORD = 'whwh1598'
+EMAIL_HOST_USER = 'your email'
+EMAIL_HOST_PASSWORD = 'your email password'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
@@ -198,5 +198,8 @@ LOGGING = {
 }
 
 INTERNAL_IPS = ['127.0.0.1']
+<<<<<<< HEAD
 
 SUMMERNOTE_THEME = 'bs4'
+=======
+>>>>>>> 0cabe3f011e5679360200661ec0176c1c2f0f43c
