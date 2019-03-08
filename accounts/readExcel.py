@@ -3,7 +3,7 @@ import openpyxl
  
 def readDataToExcel():
     # 엑셀파일 열기
-    wb = openpyxl.load_workbook('accounts/soda.xlsx')
+    wb = openpyxl.load_workbook('accounts/soda.xlsx') # 배포시 경로에 맞게 설정해줘야한다.
     
     # 현재 Active Sheet 얻기
     ws = wb.active
@@ -22,9 +22,7 @@ def readDataToExcel():
         info['email'] = email
 
         data.append(info)
-        print(name, studentNumber, email)
     
-    print(data)
     
     wb.close()
 
