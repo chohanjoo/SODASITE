@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'accounts',
     'about',
     'main',
+    'lecture',
     'rest_framework',
 ]
 
@@ -118,7 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko-kr'
 
 TIME_ZONE = 'UTC'
 
@@ -136,6 +137,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'sodasite', 'static'),
+    os.path.join(BASE_DIR, 'lecture', 'static'),
 ]
 
 from django.urls import reverse_lazy

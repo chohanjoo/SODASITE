@@ -87,6 +87,7 @@ body {
   padding: 0;
 }
 
+
 /* ------------------------------------------------------------------- 
  * ## links
  * ------------------------------------------------------------------- */
@@ -513,6 +514,10 @@ th:last-child, td:last-child {
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+.td_center{
+  vertical-align: middle;
 }
 
 /* ------------------------------------------------------------------- 
