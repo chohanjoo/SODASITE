@@ -14566,3 +14566,565 @@ DROP TABLE "django_summernote_attachment__old"; (params ())
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.001) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.001) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.001) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.001) SELECT "lecture_professor"."id", "lecture_professor"."name" FROM "lecture_professor"; args=()
+(0.000) SELECT "lecture_professor"."id", "lecture_professor"."name" FROM "lecture_professor"  LIMIT 21; args=()
+(0.001) SELECT "lecture_professor"."id", "lecture_professor"."name" FROM "lecture_professor"  LIMIT 21; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.001) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC  LIMIT 21; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA legacy_alter_table = ON; args=None
+(0.000) BEGIN; args=None
+CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "testfile" varchar(100) NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL); (params None)
+(0.004) CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "testfile" varchar(100) NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL); args=None
+(0.000) PRAGMA legacy_alter_table = OFF; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('lecture', '0001_initial', '2019-06-08 09:19:57.983603'); args=['lecture', '0001_initial', '2019-06-08 09:19:57.983603']
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA legacy_alter_table = ON; args=None
+(0.000) BEGIN; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) PRAGMA foreign_key_list("accounts_profile"); args=None
+(0.000) PRAGMA foreign_key_list("accounts_student"); args=None
+(0.000) PRAGMA foreign_key_list("auth_group"); args=None
+(0.000) PRAGMA foreign_key_list("auth_group_permissions"); args=None
+(0.000) PRAGMA foreign_key_list("auth_permission"); args=None
+(0.000) PRAGMA foreign_key_list("auth_user"); args=None
+(0.000) PRAGMA foreign_key_list("auth_user_groups"); args=None
+(0.001) PRAGMA foreign_key_list("auth_user_user_permissions"); args=None
+(0.000) PRAGMA foreign_key_list("blog_comment"); args=None
+(0.000) PRAGMA foreign_key_list("blog_post"); args=None
+(0.000) PRAGMA foreign_key_list("blog_project"); args=None
+(0.000) PRAGMA foreign_key_list("django_admin_log"); args=None
+(0.000) PRAGMA foreign_key_list("django_content_type"); args=None
+(0.000) PRAGMA foreign_key_list("django_migrations"); args=None
+(0.000) PRAGMA foreign_key_list("django_session"); args=None
+(0.000) PRAGMA foreign_key_list("django_summernote_attachment"); args=None
+ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; (params ())
+(0.001) ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; args=()
+CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "examfile" varchar(100) NULL); (params None)
+(0.000) CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "examfile" varchar(100) NULL); args=None
+INSERT INTO "lecture_lecture" ("id", "name", "professor", "year", "semester", "evalue", "created_at", "updated_at", "examfile") SELECT "id", "name", "professor", "year", "semester", "evalue", "created_at", "updated_at", "testfile" FROM "lecture_lecture__old"; (params ())
+(0.001) INSERT INTO "lecture_lecture" ("id", "name", "professor", "year", "semester", "evalue", "created_at", "updated_at", "examfile") SELECT "id", "name", "professor", "year", "semester", "evalue", "created_at", "updated_at", "testfile" FROM "lecture_lecture__old"; args=()
+DROP TABLE "lecture_lecture__old"; (params ())
+(0.000) DROP TABLE "lecture_lecture__old"; args=()
+(0.000) PRAGMA legacy_alter_table = OFF; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('lecture', '0002_auto_20190315_1741', '2019-06-08 09:19:58.016462'); args=['lecture', '0002_auto_20190315_1741', '2019-06-08 09:19:58.016462']
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA legacy_alter_table = ON; args=None
+(0.000) BEGIN; args=None
+ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; (params ())
+(0.002) ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; args=()
+CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "examfile" varchar(100) NOT NULL); (params None)
+(0.000) CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "examfile" varchar(100) NOT NULL); args=None
+INSERT INTO "lecture_lecture" ("id", "name", "professor", "year", "semester", "evalue", "created_at", "updated_at", "examfile") SELECT "id", "name", "professor", "year", "semester", "evalue", "created_at", "updated_at", coalesce("examfile", '') FROM "lecture_lecture__old"; (params ())
+(0.000) INSERT INTO "lecture_lecture" ("id", "name", "professor", "year", "semester", "evalue", "created_at", "updated_at", "examfile") SELECT "id", "name", "professor", "year", "semester", "evalue", "created_at", "updated_at", coalesce("examfile", '') FROM "lecture_lecture__old"; args=()
+DROP TABLE "lecture_lecture__old"; (params ())
+(0.000) DROP TABLE "lecture_lecture__old"; args=()
+(0.000) PRAGMA legacy_alter_table = OFF; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('lecture', '0003_auto_20190321_1225', '2019-06-08 09:19:58.045420'); args=['lecture', '0003_auto_20190321_1225', '2019-06-08 09:19:58.045420']
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA legacy_alter_table = ON; args=None
+(0.000) BEGIN; args=None
+CREATE TABLE "lecture_professor" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL); (params None)
+(0.001) CREATE TABLE "lecture_professor" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL); args=None
+ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; (params ())
+(0.001) ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; args=()
+CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "evalue" text NOT NULL); (params None)
+(0.000) CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "evalue" text NOT NULL); args=None
+INSERT INTO "lecture_lecture" ("id", "name", "professor", "year", "semester", "examfile", "created_at", "updated_at", "evalue") SELECT "id", "name", "professor", "year", "semester", "examfile", "created_at", "updated_at", "evalue" FROM "lecture_lecture__old"; (params ())
+(0.000) INSERT INTO "lecture_lecture" ("id", "name", "professor", "year", "semester", "examfile", "created_at", "updated_at", "evalue") SELECT "id", "name", "professor", "year", "semester", "examfile", "created_at", "updated_at", "evalue" FROM "lecture_lecture__old"; args=()
+DROP TABLE "lecture_lecture__old"; (params ())
+(0.000) DROP TABLE "lecture_lecture__old"; args=()
+ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; (params ())
+(0.000) ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; args=()
+CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "examfile" varchar(100) NOT NULL); (params None)
+(0.001) CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "examfile" varchar(100) NOT NULL); args=None
+INSERT INTO "lecture_lecture" ("id", "name", "professor", "year", "semester", "evalue", "created_at", "updated_at", "examfile") SELECT "id", "name", "professor", "year", "semester", "evalue", "created_at", "updated_at", "examfile" FROM "lecture_lecture__old"; (params ())
+(0.000) INSERT INTO "lecture_lecture" ("id", "name", "professor", "year", "semester", "evalue", "created_at", "updated_at", "examfile") SELECT "id", "name", "professor", "year", "semester", "evalue", "created_at", "updated_at", "examfile" FROM "lecture_lecture__old"; args=()
+DROP TABLE "lecture_lecture__old"; (params ())
+(0.000) DROP TABLE "lecture_lecture__old"; args=()
+ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; (params ())
+(0.001) ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; args=()
+CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "professor" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "name" varchar(50) NOT NULL); (params None)
+(0.000) CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "professor" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "name" varchar(50) NOT NULL); args=None
+INSERT INTO "lecture_lecture" ("id", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at", "name") SELECT "id", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at", "name" FROM "lecture_lecture__old"; (params ())
+(0.000) INSERT INTO "lecture_lecture" ("id", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at", "name") SELECT "id", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at", "name" FROM "lecture_lecture__old"; args=()
+DROP TABLE "lecture_lecture__old"; (params ())
+(0.000) DROP TABLE "lecture_lecture__old"; args=()
+ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; (params ())
+(0.000) ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; args=()
+CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "professor_id" integer NOT NULL REFERENCES "lecture_professor" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+(0.000) CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "professor_id" integer NOT NULL REFERENCES "lecture_professor" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+INSERT INTO "lecture_lecture" ("id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at", "professor_id") SELECT "id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at", "professor" FROM "lecture_lecture__old"; (params ())
+(0.000) INSERT INTO "lecture_lecture" ("id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at", "professor_id") SELECT "id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at", "professor" FROM "lecture_lecture__old"; args=()
+DROP TABLE "lecture_lecture__old"; (params ())
+(0.000) DROP TABLE "lecture_lecture__old"; args=()
+CREATE INDEX "lecture_lecture_professor_id_32daea8c" ON "lecture_lecture" ("professor_id"); (params ())
+(0.000) CREATE INDEX "lecture_lecture_professor_id_32daea8c" ON "lecture_lecture" ("professor_id"); args=()
+ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; (params ())
+(0.000) ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; args=()
+CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor_id" integer NOT NULL REFERENCES "lecture_professor" ("id") DEFERRABLE INITIALLY DEFERRED, "year" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "semester" integer NOT NULL); (params None)
+(0.000) CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor_id" integer NOT NULL REFERENCES "lecture_professor" ("id") DEFERRABLE INITIALLY DEFERRED, "year" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "semester" integer NOT NULL); args=None
+INSERT INTO "lecture_lecture" ("id", "name", "professor_id", "year", "evalue", "examfile", "created_at", "updated_at", "semester") SELECT "id", "name", "professor_id", "year", "evalue", "examfile", "created_at", "updated_at", "semester" FROM "lecture_lecture__old"; (params ())
+(0.000) INSERT INTO "lecture_lecture" ("id", "name", "professor_id", "year", "evalue", "examfile", "created_at", "updated_at", "semester") SELECT "id", "name", "professor_id", "year", "evalue", "examfile", "created_at", "updated_at", "semester" FROM "lecture_lecture__old"; args=()
+DROP TABLE "lecture_lecture__old"; (params ())
+(0.001) DROP TABLE "lecture_lecture__old"; args=()
+CREATE INDEX "lecture_lecture_professor_id_32daea8c" ON "lecture_lecture" ("professor_id"); (params ())
+(0.000) CREATE INDEX "lecture_lecture_professor_id_32daea8c" ON "lecture_lecture" ("professor_id"); args=()
+ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; (params ())
+(0.000) ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; args=()
+CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor_id" integer NOT NULL REFERENCES "lecture_professor" ("id") DEFERRABLE INITIALLY DEFERRED, "semester" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "year" integer NOT NULL); (params None)
+(0.000) CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "professor_id" integer NOT NULL REFERENCES "lecture_professor" ("id") DEFERRABLE INITIALLY DEFERRED, "semester" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "year" integer NOT NULL); args=None
+INSERT INTO "lecture_lecture" ("id", "name", "professor_id", "semester", "evalue", "examfile", "created_at", "updated_at", "year") SELECT "id", "name", "professor_id", "semester", "evalue", "examfile", "created_at", "updated_at", "year" FROM "lecture_lecture__old"; (params ())
+(0.000) INSERT INTO "lecture_lecture" ("id", "name", "professor_id", "semester", "evalue", "examfile", "created_at", "updated_at", "year") SELECT "id", "name", "professor_id", "semester", "evalue", "examfile", "created_at", "updated_at", "year" FROM "lecture_lecture__old"; args=()
+DROP TABLE "lecture_lecture__old"; (params ())
+(0.000) DROP TABLE "lecture_lecture__old"; args=()
+CREATE INDEX "lecture_lecture_professor_id_32daea8c" ON "lecture_lecture" ("professor_id"); (params ())
+(0.000) CREATE INDEX "lecture_lecture_professor_id_32daea8c" ON "lecture_lecture" ("professor_id"); args=()
+(0.000) PRAGMA legacy_alter_table = OFF; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('lecture', '0004_auto_20190326_2024', '2019-06-08 09:19:58.108129'); args=['lecture', '0004_auto_20190326_2024', '2019-06-08 09:19:58.108129']
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA legacy_alter_table = ON; args=None
+(0.000) BEGIN; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) PRAGMA foreign_key_list("accounts_profile"); args=None
+(0.000) PRAGMA foreign_key_list("accounts_student"); args=None
+(0.000) PRAGMA foreign_key_list("auth_group"); args=None
+(0.000) PRAGMA foreign_key_list("auth_group_permissions"); args=None
+(0.000) PRAGMA foreign_key_list("auth_permission"); args=None
+(0.000) PRAGMA foreign_key_list("auth_user"); args=None
+(0.000) PRAGMA foreign_key_list("auth_user_groups"); args=None
+(0.000) PRAGMA foreign_key_list("auth_user_user_permissions"); args=None
+(0.000) PRAGMA foreign_key_list("blog_comment"); args=None
+(0.000) PRAGMA foreign_key_list("blog_post"); args=None
+(0.000) PRAGMA foreign_key_list("blog_project"); args=None
+(0.000) PRAGMA foreign_key_list("django_admin_log"); args=None
+(0.000) PRAGMA foreign_key_list("django_content_type"); args=None
+(0.000) PRAGMA foreign_key_list("django_migrations"); args=None
+(0.000) PRAGMA foreign_key_list("django_session"); args=None
+(0.000) PRAGMA foreign_key_list("django_summernote_attachment"); args=None
+(0.000) PRAGMA foreign_key_list("lecture_lecture"); args=None
+ALTER TABLE "lecture_professor" RENAME TO "lecture_professor__old"; (params ())
+(0.001) ALTER TABLE "lecture_professor" RENAME TO "lecture_professor__old"; args=()
+CREATE TABLE "lecture_professor" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "p_name" varchar(50) NOT NULL); (params None)
+(0.000) CREATE TABLE "lecture_professor" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "p_name" varchar(50) NOT NULL); args=None
+INSERT INTO "lecture_professor" ("id", "p_name") SELECT "id", "name" FROM "lecture_professor__old"; (params ())
+(0.000) INSERT INTO "lecture_professor" ("id", "p_name") SELECT "id", "name" FROM "lecture_professor__old"; args=()
+DROP TABLE "lecture_professor__old"; (params ())
+(0.000) DROP TABLE "lecture_professor__old"; args=()
+(0.000) PRAGMA legacy_alter_table = OFF; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) BEGIN; args=None
+(0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('lecture', '0005_auto_20190326_2048', '2019-06-08 09:19:58.134195'); args=['lecture', '0005_auto_20190326_2048', '2019-06-08 09:19:58.134195']
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA legacy_alter_table = ON; args=None
+(0.001) BEGIN; args=None
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) PRAGMA foreign_key_list("accounts_profile"); args=None
+(0.000) PRAGMA foreign_key_list("accounts_student"); args=None
+(0.000) PRAGMA foreign_key_list("auth_group"); args=None
+(0.000) PRAGMA foreign_key_list("auth_group_permissions"); args=None
+(0.000) PRAGMA foreign_key_list("auth_permission"); args=None
+(0.000) PRAGMA foreign_key_list("auth_user"); args=None
+(0.000) PRAGMA foreign_key_list("auth_user_groups"); args=None
+(0.000) PRAGMA foreign_key_list("auth_user_user_permissions"); args=None
+(0.000) PRAGMA foreign_key_list("blog_comment"); args=None
+(0.000) PRAGMA foreign_key_list("blog_post"); args=None
+(0.000) PRAGMA foreign_key_list("blog_project"); args=None
+(0.001) PRAGMA foreign_key_list("django_admin_log"); args=None
+(0.000) PRAGMA foreign_key_list("django_content_type"); args=None
+(0.000) PRAGMA foreign_key_list("django_migrations"); args=None
+(0.000) PRAGMA foreign_key_list("django_session"); args=None
+(0.000) PRAGMA foreign_key_list("django_summernote_attachment"); args=None
+(0.000) PRAGMA foreign_key_list("lecture_lecture"); args=None
+ALTER TABLE "lecture_professor" RENAME TO "lecture_professor__old"; (params ())
+(0.002) ALTER TABLE "lecture_professor" RENAME TO "lecture_professor__old"; args=()
+CREATE TABLE "lecture_professor" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL); (params None)
+(0.001) CREATE TABLE "lecture_professor" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL); args=None
+INSERT INTO "lecture_professor" ("id", "name") SELECT "id", "p_name" FROM "lecture_professor__old"; (params ())
+(0.000) INSERT INTO "lecture_professor" ("id", "name") SELECT "id", "p_name" FROM "lecture_professor__old"; args=()
+DROP TABLE "lecture_professor__old"; (params ())
+(0.001) DROP TABLE "lecture_professor__old"; args=()
+(0.000) PRAGMA legacy_alter_table = OFF; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('lecture', '0006_auto_20190326_2147', '2019-06-08 09:19:58.165083'); args=['lecture', '0006_auto_20190326_2147', '2019-06-08 09:19:58.165083']
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA legacy_alter_table = ON; args=None
+(0.000) BEGIN; args=None
+ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; (params ())
+(0.002) ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; args=()
+CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL); (params None)
+(0.000) CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL); args=None
+INSERT INTO "lecture_lecture" ("id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at") SELECT "id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at" FROM "lecture_lecture__old"; (params ())
+(0.000) INSERT INTO "lecture_lecture" ("id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at") SELECT "id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at" FROM "lecture_lecture__old"; args=()
+DROP TABLE "lecture_lecture__old"; (params ())
+(0.000) DROP TABLE "lecture_lecture__old"; args=()
+CREATE TABLE "lecture_lecture_professor" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "lecture_id" integer NOT NULL REFERENCES "lecture_lecture" ("id") DEFERRABLE INITIALLY DEFERRED, "professor_id" integer NOT NULL REFERENCES "lecture_professor" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+(0.000) CREATE TABLE "lecture_lecture_professor" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "lecture_id" integer NOT NULL REFERENCES "lecture_lecture" ("id") DEFERRABLE INITIALLY DEFERRED, "professor_id" integer NOT NULL REFERENCES "lecture_professor" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+CREATE UNIQUE INDEX "lecture_lecture_professor_lecture_id_professor_id_487e7f7b_uniq" ON "lecture_lecture_professor" ("lecture_id", "professor_id"); (params ())
+(0.000) CREATE UNIQUE INDEX "lecture_lecture_professor_lecture_id_professor_id_487e7f7b_uniq" ON "lecture_lecture_professor" ("lecture_id", "professor_id"); args=()
+CREATE INDEX "lecture_lecture_professor_lecture_id_b683fc0a" ON "lecture_lecture_professor" ("lecture_id"); (params ())
+(0.000) CREATE INDEX "lecture_lecture_professor_lecture_id_b683fc0a" ON "lecture_lecture_professor" ("lecture_id"); args=()
+CREATE INDEX "lecture_lecture_professor_professor_id_ebb3e6e9" ON "lecture_lecture_professor" ("professor_id"); (params ())
+(0.000) CREATE INDEX "lecture_lecture_professor_professor_id_ebb3e6e9" ON "lecture_lecture_professor" ("professor_id"); args=()
+(0.000) PRAGMA legacy_alter_table = OFF; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) BEGIN; args=None
+(0.002) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('lecture', '0007_auto_20190328_1612', '2019-06-08 09:19:58.197904'); args=['lecture', '0007_auto_20190328_1612', '2019-06-08 09:19:58.197904']
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA legacy_alter_table = ON; args=None
+(0.000) BEGIN; args=None
+DROP TABLE "lecture_lecture_professor"; (params ())
+(0.002) DROP TABLE "lecture_lecture_professor"; args=()
+ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; (params ())
+(0.001) ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; args=()
+CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "professor" varchar(50) NOT NULL); (params None)
+(0.000) CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "professor" varchar(50) NOT NULL); args=None
+INSERT INTO "lecture_lecture" ("id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at", "professor") SELECT "id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at", '2019-06-08 09:19:58.216245+00:00' FROM "lecture_lecture__old"; (params ())
+(0.000) INSERT INTO "lecture_lecture" ("id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at", "professor") SELECT "id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at", '2019-06-08 09:19:58.216245+00:00' FROM "lecture_lecture__old"; args=()
+DROP TABLE "lecture_lecture__old"; (params ())
+(0.000) DROP TABLE "lecture_lecture__old"; args=()
+DROP TABLE "lecture_professor"; (params ())
+(0.000) DROP TABLE "lecture_professor"; args=()
+(0.000) PRAGMA legacy_alter_table = OFF; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('lecture', '0008_auto_20190608_1819', '2019-06-08 09:19:58.228797'); args=['lecture', '0008_auto_20190608_1819', '2019-06-08 09:19:58.228797']
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'post'); args=('blog', 'post')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'project'); args=('blog', 'project')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'comment'); args=('blog', 'comment')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8, 9, 7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8, 9, 7)
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'blog'; args=('blog',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'accounts' AND "django_content_type"."model" = 'profile'); args=('accounts', 'profile')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'accounts' AND "django_content_type"."model" = 'student'); args=('accounts', 'student')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (10, 11) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(10, 11)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'accounts'; args=('accounts',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'lecture' AND "django_content_type"."model" = 'lecture'); args=('lecture', 'lecture')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'lecture' AND "django_content_type"."model" = 'lecture'); args=('lecture', 'lecture')
+(0.000) BEGIN; args=None
+(0.004) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('lecture', 'lecture'); args=['lecture', 'lecture']
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (13) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(13,)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") SELECT 'Can add lecture', 13, 'add_lecture' UNION ALL SELECT 'Can change lecture', 13, 'change_lecture' UNION ALL SELECT 'Can delete lecture', 13, 'delete_lecture' UNION ALL SELECT 'Can view lecture', 13, 'view_lecture'; args=('Can add lecture', 13, 'add_lecture', 'Can change lecture', 13, 'change_lecture', 'Can delete lecture', 13, 'delete_lecture', 'Can view lecture', 13, 'view_lecture')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'lecture'; args=('lecture',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'django_summernote' AND "django_content_type"."model" = 'attachment'); args=('django_summernote', 'attachment')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (12) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(12,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'django_summernote'; args=('django_summernote',)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA legacy_alter_table = ON; args=None
+(0.000) BEGIN; args=None
+DROP TABLE "lecture_lecture_professor"; (params ())
+ALTER TABLE "lecture_lecture" RENAME TO "lecture_lecture__old"; (params ())
+CREATE TABLE "lecture_lecture" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "professor" varchar(50) NOT NULL, "name" varchar(50) NOT NULL, "year" integer NOT NULL, "semester" integer NOT NULL, "evalue" text NOT NULL, "examfile" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL); (params None)
+INSERT INTO "lecture_lecture" ("id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at", "professor") SELECT "id", "name", "year", "semester", "evalue", "examfile", "created_at", "updated_at", '2019-06-08 09:20:46.806528+00:00' FROM "lecture_lecture__old"; (params ())
+DROP TABLE "lecture_lecture__old"; (params ())
+DROP TABLE "lecture_professor"; (params ())
+(0.000) PRAGMA legacy_alter_table = OFF; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()

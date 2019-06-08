@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'z46o&&c0%jt72%+*17_-zfly$68a*4o_cws$r*hm^ri1+6g4-k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'accounts',
     'about',
     'main',
+    'lecture',
     'django_summernote',
 ]
 
