@@ -7,10 +7,9 @@
 	<div class="container">
 		<div class="row narrow">
 			<div class="col-lg-8 col-md-10 mx-auto">
-				
 				<form actions="lecture:add_lecture" method="post" enctype="multipart/form-data" autocomplete="off" >
 					{% csrf_token %}
-					<table class="table ">
+					<table class="table">
 						<tr>
 							<td><label>강의명 :</label></td>
 							<td>{{ form.name }}</td>
@@ -18,11 +17,7 @@
 						<tr>
 							<span>
 								<td><label>교수님 :</label></td>
-								{% if form.professor %}
-									<td>{{ form.professor}}</td>
-								{% endif %}
-								<!-- <td><a target = "_blank" rel = "noopener noreferrer" href = "lecture:professor_add">선택</a></td> -->
-								<!-- <input type="button" value=" 추가" onClick="location.href = 'professor_add/'" class="btn btn-danger pull-right"> -->
+								<td>{{ form.professor }}</td>
 							</span>
 						</tr>
 						<tr>
@@ -40,7 +35,7 @@
 							<td nowrap>{{ form.examfile }}</td>
 						</tr>
 					</table>
-					
+
 					<input type="button" value="목록" onClick="location.href = '/lecture'" class="btn btn-secondary pull-right">
 					<input type="submit" value="등록" class="btn btn--primary pull-right" />
 				</form>

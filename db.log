@@ -15128,3 +15128,299 @@ DROP TABLE "lecture_professor"; (params ())
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) BEGIN; args=None
+CREATE TABLE "new__auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(150) NOT NULL UNIQUE); (params None)
+(0.000) CREATE TABLE "new__auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(150) NOT NULL UNIQUE); args=None
+INSERT INTO "new__auth_group" ("id", "name") SELECT "id", "name" FROM "auth_group"; (params ())
+(0.000) INSERT INTO "new__auth_group" ("id", "name") SELECT "id", "name" FROM "auth_group"; args=()
+DROP TABLE "auth_group"; (params ())
+(0.000) DROP TABLE "auth_group"; args=()
+ALTER TABLE "new__auth_group" RENAME TO "auth_group"; (params ())
+(0.001) ALTER TABLE "new__auth_group" RENAME TO "auth_group"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0010_alter_group_name_max_length', '2019-06-25 10:38:34.584059'); args=['auth', '0010_alter_group_name_max_length', '2019-06-25 10:38:34.584059']
+(0.000) PRAGMA foreign_key_check; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) BEGIN; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0011_update_proxy_permissions', '2019-06-25 10:38:34.691134'); args=['auth', '0011_update_proxy_permissions', '2019-06-25 10:38:34.691134']
+(0.000) PRAGMA foreign_key_check; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'blog'; args=('blog',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'post'); args=('blog', 'post')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'project'); args=('blog', 'project')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'comment'); args=('blog', 'comment')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8, 9, 7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8, 9, 7)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'blog'; args=('blog',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'accounts'; args=('accounts',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'accounts' AND "django_content_type"."model" = 'profile'); args=('accounts', 'profile')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'accounts' AND "django_content_type"."model" = 'student'); args=('accounts', 'student')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (10, 11) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(10, 11)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'accounts'; args=('accounts',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'lecture'; args=('lecture',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'lecture' AND "django_content_type"."model" = 'lecture'); args=('lecture', 'lecture')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (13) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(13,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'lecture'; args=('lecture',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'django_summernote'; args=('django_summernote',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'django_summernote' AND "django_content_type"."model" = 'attachment'); args=('django_summernote', 'attachment')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (12) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(12,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'django_summernote'; args=('django_summernote',)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.094) INSERT INTO "lecture_lecture" ("name", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at") VALUES ('d', 'd', 2019, 0, 'd', '', '2019-06-25 11:41:44.712953', '2019-06-25 11:41:44.712986'); args=['d', 'd', 2019, 0, 'd', '', '2019-06-25 11:41:44.712953', '2019-06-25 11:41:44.712986']
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 1; args=(1,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.063) INSERT INTO "lecture_lecture" ("name", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at") VALUES ('d', 'af', 2012, 0, 'adfadf', '', '2019-06-25 11:41:55.839502', '2019-06-25 11:41:55.839533'); args=['d', 'af', 2012, 0, 'adfadf', '', '2019-06-25 11:41:55.839502', '2019-06-25 11:41:55.839533']
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 2; args=(2,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 1; args=(1,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 1; args=(1,)
+(0.096) DELETE FROM "lecture_lecture" WHERE "lecture_lecture"."id" IN (1); args=(1,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 2; args=(2,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 2; args=(2,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 2; args=(2,)
+(0.100) UPDATE "lecture_lecture" SET "name" = 'd', "professor" = 'af', "year" = 2012, "semester" = 0, "evalue" = '긋ㄳ', "examfile" = '', "created_at" = '2019-06-25 11:41:55.839502', "updated_at" = '2019-06-25 11:42:24.414559' WHERE "lecture_lecture"."id" = 2; args=('d', 'af', 2012, 0, '긋ㄳ', '', '2019-06-25 11:41:55.839502', '2019-06-25 11:42:24.414559', 2)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 2; args=(2,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 2; args=(2,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 2; args=(2,)
+(0.071) DELETE FROM "lecture_lecture" WHERE "lecture_lecture"."id" IN (2); args=(2,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.062) INSERT INTO "lecture_lecture" ("name", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at") VALUES ('gggg', 'gg', 2019, 0, 'dsdsgd', '', '2019-06-25 11:43:47.004306', '2019-06-25 11:43:47.004349'); args=['gggg', 'gg', 2019, 0, 'dsdsgd', '', '2019-06-25 11:43:47.004306', '2019-06-25 11:43:47.004349']
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 3; args=(3,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 3; args=(3,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 3; args=(3,)
+(0.073) DELETE FROM "lecture_lecture" WHERE "lecture_lecture"."id" IN (3); args=(3,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()

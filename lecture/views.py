@@ -19,20 +19,12 @@ def add_lecture(request):
 
     if request.method == 'POST':
         form = form_cls(request.POST, request.FILES)
-        # print(form.__dict__["fields"]["professor"])
-
-        # print(request.POST.get)
+        
         if form.is_valid():
-            print('1111')
             lecture = form.save()
-            # p_name = form.cleaned_data.get('professor')
-            # Professor.save()
-            # lecture = form.save(commit=False)
-            # lecture.professor = professor
-            # lecture.save()
-
             return redirect(lecture)
         else :
+            print(form.errors.as_json())
             ValidationError(_('Invalid value'), code='invalid')
 
     else:
