@@ -15424,3 +15424,174 @@ ALTER TABLE "new__auth_group" RENAME TO "auth_group"; (params ())
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) BEGIN; args=None
+(0.005) INSERT INTO "lecture_lecture" ("name", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at") VALUES ('시스템프로그래밍', '조영필', 2018, 0, '과제많아', 'lecture/시프_시험.tiff', '2019-06-26 09:43:23.925297', '2019-06-26 09:43:23.925297'); args=['시스템프로그래밍', '조영필', 2018, 0, '과제많아', 'lecture/시프_시험.tiff', '2019-06-26 09:43:23.925297', '2019-06-26 09:43:23.925297']
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.000) BEGIN; args=None
+(0.004) UPDATE "lecture_lecture" SET "name" = '시스템프로그래밍', "professor" = '조영필', "year" = 2019, "semester" = 0, "evalue" = '과제많아', "examfile" = 'lecture/시프_시험.tiff', "created_at" = '2019-06-26 09:43:23.925297', "updated_at" = '2019-06-26 09:45:51.776769' WHERE "lecture_lecture"."id" = 4; args=('시스템프로그래밍', '조영필', 2019, 0, '과제많아', 'lecture/시프_시험.tiff', '2019-06-26 09:43:23.925297', '2019-06-26 09:45:51.776769', 4)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.002) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.002) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.000) BEGIN; args=None
+(0.003) UPDATE "lecture_lecture" SET "name" = '시스템프로그래밍', "professor" = '조영필', "year" = 2019, "semester" = 0, "evalue" = '과제많아', "examfile" = 'lecture/시프_시험.tiff', "created_at" = '2019-06-26 09:43:23.925297', "updated_at" = '2019-06-26 10:08:50.514453' WHERE "lecture_lecture"."id" = 4; args=('시스템프로그래밍', '조영필', 2019, 0, '과제많아', 'lecture/시프_시험.tiff', '2019-06-26 09:43:23.925297', '2019-06-26 10:08:50.514453', 4)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) BEGIN; args=None
+(0.004) UPDATE "lecture_lecture" SET "name" = '시스템프로그래밍', "professor" = '조영필', "year" = 2019, "semester" = 0, "evalue" = '과제많아', "examfile" = 'lecture/시프_시험.tiff', "created_at" = '2019-06-26 09:43:23.925297', "updated_at" = '2019-06-26 10:17:34.935263' WHERE "lecture_lecture"."id" = 4; args=('시스템프로그래밍', '조영필', 2019, 0, '과제많아', 'lecture/시프_시험.tiff', '2019-06-26 09:43:23.925297', '2019-06-26 10:17:34.935263', 4)
+(0.002) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.000) BEGIN; args=None
+(0.002) UPDATE "lecture_lecture" SET "name" = '시스템프로그래밍', "professor" = '조영필', "year" = 2019, "semester" = 0, "evalue" = '과제많아', "examfile" = 'lecture/시프_시험.tiff', "created_at" = '2019-06-26 09:43:23.925297', "updated_at" = '2019-06-26 10:17:41.718114' WHERE "lecture_lecture"."id" = 4; args=('시스템프로그래밍', '조영필', 2019, 0, '과제많아', 'lecture/시프_시험.tiff', '2019-06-26 09:43:23.925297', '2019-06-26 10:17:41.718114', 4)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.000) BEGIN; args=None
+(0.003) UPDATE "lecture_lecture" SET "name" = '시스템프로그래밍', "professor" = '조영필', "year" = 2019, "semester" = 0, "evalue" = '과제많아', "examfile" = 'lecture/시프_시험.tiff', "created_at" = '2019-06-26 09:43:23.925297', "updated_at" = '2019-06-26 10:21:10.586345' WHERE "lecture_lecture"."id" = 4; args=('시스템프로그래밍', '조영필', 2019, 0, '과제많아', 'lecture/시프_시험.tiff', '2019-06-26 09:43:23.925297', '2019-06-26 10:21:10.586345', 4)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.002) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.003) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 4; args=(4,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) BEGIN; args=None
+(0.006) INSERT INTO "lecture_lecture" ("name", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at") VALUES ('운영체제', '조영필', 2019, 0, '과제가 격주에 한번씩 나감ㅠ', 'lecture/2016학년도2B교양선택2B이수2B조건2B및2B과목리스트.xlsx', '2019-06-26 11:13:15.796259', '2019-06-26 11:13:15.796259'); args=['운영체제', '조영필', 2019, 0, '과제가 격주에 한번씩 나감ㅠ', 'lecture/2016학년도2B교양선택2B이수2B조건2B및2B과목리스트.xlsx', '2019-06-26 11:13:15.796259', '2019-06-26 11:13:15.796259']
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 5; args=(5,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 5; args=(5,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 5; args=(5,)
+(0.000) BEGIN; args=None
+(0.007) UPDATE "lecture_lecture" SET "name" = '운영체제', "professor" = '조영필', "year" = 2018, "semester" = 2, "evalue" = '과제가 격주에 한번씩 나옴ㅠ', "examfile" = 'lecture/2016학년도2B교양선택2B이수2B조건2B및2B과목리스트.xlsx', "created_at" = '2019-06-26 11:13:15.796259', "updated_at" = '2019-06-26 11:14:29.642156' WHERE "lecture_lecture"."id" = 5; args=('운영체제', '조영필', 2018, 2, '과제가 격주에 한번씩 나옴ㅠ', 'lecture/2016학년도2B교양선택2B이수2B조건2B및2B과목리스트.xlsx', '2019-06-26 11:13:15.796259', '2019-06-26 11:14:29.642156', 5)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 5; args=(5,)
+(0.001) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.001) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()

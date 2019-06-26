@@ -24,7 +24,6 @@ def add_lecture(request):
             lecture = form.save()
             return redirect(lecture)
         else :
-            print(form.errors.as_json())
             ValidationError(_('Invalid value'), code='invalid')
 
     else:
@@ -38,9 +37,10 @@ def detail_lecture(request, pk):
     lecture = get_object_or_404(Lecture, pk=pk)
     form = LectureForm(instance = lecture)
     template_name = 'lecture/lecture_detail.html'
-
+    
     return render(request, template_name,{
         'form' : form,
+        'lecture' : lecture
     })
 
 def edit_lecture(request, pk):
@@ -50,6 +50,7 @@ def edit_lecture(request, pk):
 
     if request.method == 'POST':
         form = form_cls(request.POST, request.FILES, instance = lecture)
+        print(request.FILES)
         if form.is_valid():
             lecture = form.save()
             return redirect(lecture)

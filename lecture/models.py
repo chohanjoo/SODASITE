@@ -26,8 +26,6 @@ class Lecture(models.Model):
     
 
     # def save(self, **kwargs):
-    #     professor = Professor.objects.get_or_create(name = self.professor)
-    #     print(professor)
     #     super(Lecture, self).save(**kwargs)
 
 
