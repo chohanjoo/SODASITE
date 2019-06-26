@@ -8,7 +8,7 @@ from django.utils.translation import gettext_lazy as _
 def index(request):
     lecture_list = Lecture.objects.all().order_by('name')
     template_name = 'lecture/lecture_list.html'
-
+    
     return render(request, template_name, {
         'lecture_list' : lecture_list,
     })

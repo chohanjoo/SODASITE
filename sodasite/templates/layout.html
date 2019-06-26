@@ -76,45 +76,49 @@
             <h2 class="header__nav-heading h6">Navigate to</h2>
 
             <ul class="header__nav">
+                {% if request.path == '/'%}
                 <li class="current"><a href="{% url 'main:index' %}" title="">Home</a></li>
-                <li><a href="{% url 'blog:post_list' %}">Project</a></li>
-                <!-- <li class="has-children">
-                    <a href="#0" title="">Categories</a>
-                    <ul class="sub-menu">
-                        <li><a href="{% url 'blog:post_list' %}">Project</a></li>
-                        <li><a href="category.html">Health</a></li>
-                        <li><a href="category.html">Family</a></li>
-                        <li><a href="category.html">Management</a></li>
-                        <li><a href="category.html">Travel</a></li>
-                        <li><a href="category.html">Work</a></li>
-                    </ul>
-                </li> -->
-                <!-- <li class="has-children">
-                    <a href="#0" title="">Blog</a>
-                    <ul class="sub-menu">
-                        <li><a href="single-video.html">Video Post</a></li>
-                        <li><a href="single-audio.html">Audio Post</a></li>
-                        <li><a href="single-standard.html">Standard Post</a></li>
-                    </ul>
-                </li>
-                 -->
+                {% else %}
+                <li><a href="{% url 'main:index' %}" title="">Home</a></li>
+                {% endif %}
+                
+                {% if 'blog' in request.path %}
+                <li class="current"><a href="{% url 'blog:post_list' %}" title="">Project</a></li>
+                {% else %}
+                <li><a href="{% url 'blog:post_list' %}" title="">Project</a></li>
+                {% endif %}
 
+                {% if 'lecture' in request.path %}
+                <li class="current"><a href="{% url 'lecture:index' %}" title="">Lecture</a></li>
+                {% else %}
                 <li><a href="{% url 'lecture:index' %}" title="">Lecture</a></li>
-                
+                {% endif %}
+
+                {% if 'about' in request.path %}
+                <li class="current"><a href="{% url 'about:about' %}" title="">About</a></li>
+                {% else %}
                 <li><a href="{% url 'about:about' %}" title="">About</a></li>
-                
+                {% endif %}
 
                 {% if user.is_authenticated %}
                 <li class="has-children">
                     <a href="#0" title="">My Page</a>
                     <ul class="sub-menu">
                         <li><a href="{% url 'profile' user.pk %}" title="">{{ user.username }}</a></li>
+                        {% if 'account' in request.path %}
+                        <li class="current"><a href="{% url 'logout' %}" title="">Logout</a></li>
+                        {% else %}
                         <li><a href="{% url 'logout' %}" title="">Logout</a></li>
+                        {% endif %}
                     </ul>
                 </li>
           
                 {% else %}
-                <li><a href="{% url 'login' %}" title="">Login</a></li>
+                    {% if 'account' in request.path %}
+                    <li class="current"><a href="{% url 'login' %}" title="">Login</a></li>
+                    {% else %}
+                    <li><a href="{% url 'login' %}" title="">Login</a></li>
+                    {% endif %}
                 {% endif %}
             </ul> <!-- end header__nav -->
 
