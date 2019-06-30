@@ -12,8 +12,9 @@ from .models import Student, Profile
 from django import forms
 
 from django_summernote.widgets import SummernoteWidget
-class SignupForm(UserCreationForm):
-    pass
+
+# class SignupForm(UserCreationForm):
+#     class Meta:
         # email = forms.EmailField(
         #     label=_("Input email"),
         #     help_text=_("Enter the same password as before, for verification."),
@@ -25,6 +26,5 @@ class ProfileForm(forms.ModelForm):
         model = Profile
         fields = '__all__'
         widgets = {
-            'bio': SummernoteWidget(),
-           
+            'intro': SummernoteWidget(),
         }
