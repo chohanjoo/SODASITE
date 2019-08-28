@@ -20,7 +20,7 @@
                     <div class="item-entry__thumb">
                         <div class="item-entry__text">
                             <h1 class="item-entry__thumb-link">
-                                <a href="{% url "lecture:detail_lecture" lecture.pk %}" class="item-entry__thumb-link">
+                                <a href="{% url 'lecture:detail_lecture' lecture.pk %}" class="item-entry__thumb-link">
                                     {{lecture.name}}
                                 </a>
                                 <img src="{% static 'images/default.jpg' %}"

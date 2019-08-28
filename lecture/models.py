@@ -23,10 +23,3 @@ class Lecture(models.Model):
 
     def get_absolute_url(self):
         return reverse('lecture:detail_lecture', args=[self.pk])
-    
-
-    # def save(self, **kwargs):
-    #     super(Lecture, self).save(**kwargs)
-
-
-

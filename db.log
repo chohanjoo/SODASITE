@@ -15867,3 +15867,376 @@ ALTER TABLE "new__auth_group" RENAME TO "auth_group"; (params ())
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.080) INSERT INTO "lecture_lecture" ("name", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at") VALUES ('ddd', 'dddd', 2019, 0, 'ddd', '', '2019-08-28 09:20:08.737592', '2019-08-28 09:20:08.737638'); args=['ddd', 'dddd', 2019, 0, 'ddd', '', '2019-08-28 09:20:08.737592', '2019-08-28 09:20:08.737638']
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 6; args=(6,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.059) INSERT INTO "lecture_lecture" ("name", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at") VALUES ('d', 's', 2019, 0, 'd', '', '2019-08-28 09:24:58.502935', '2019-08-28 09:24:58.502975'); args=['d', 's', 2019, 0, 'd', '', '2019-08-28 09:24:58.502935', '2019-08-28 09:24:58.502975']
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 7; args=(7,)
+(0.082) INSERT INTO "lecture_lecture" ("name", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at") VALUES ('s', 's', 2019, 0, 's', '', '2019-08-28 09:25:51.714493', '2019-08-28 09:25:51.714523'); args=['s', 's', 2019, 0, 's', '', '2019-08-28 09:25:51.714493', '2019-08-28 09:25:51.714523']
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 8; args=(8,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.080) INSERT INTO "lecture_lecture" ("name", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at") VALUES ('dd', 'ss', 2019, 0, 'ss', '', '2019-08-28 09:29:10.418781', '2019-08-28 09:29:10.418817'); args=['dd', 'ss', 2019, 0, 'ss', '', '2019-08-28 09:29:10.418781', '2019-08-28 09:29:10.418817']
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.089) INSERT INTO "lecture_lecture" ("name", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at") VALUES ('ssss', 'aaaaa', 2019, 0, 'dddfad', '', '2019-08-28 09:55:10.597242', '2019-08-28 09:55:10.597273'); args=['ssss', 'aaaaa', 2019, 0, 'dddfad', '', '2019-08-28 09:55:10.597242', '2019-08-28 09:55:10.597273']
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 10; args=(10,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 7; args=(7,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 7; args=(7,)
+(0.063) DELETE FROM "lecture_lecture" WHERE "lecture_lecture"."id" IN (7); args=(7,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.085) INSERT INTO "lecture_lecture" ("name", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at") VALUES ('고컴수', '왕콕', 2019, 0, '굿굿', 'lecture/1566562389914.png', '2019-08-28 09:56:02.889978', '2019-08-28 09:56:02.890021'); args=['고컴수', '왕콕', 2019, 0, '굿굿', 'lecture/1566562389914.png', '2019-08-28 09:56:02.889978', '2019-08-28 09:56:02.890021']
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.071) INSERT INTO "lecture_lecture" ("name", "professor", "year", "semester", "evalue", "examfile", "created_at", "updated_at") VALUES ('aadfad', 'adfadsf', 2019, 0, 'asdf', '', '2019-08-28 09:57:55.976613', '2019-08-28 09:57:55.976647'); args=['aadfad', 'adfadsf', 2019, 0, 'asdf', '', '2019-08-28 09:57:55.976613', '2019-08-28 09:57:55.976647']
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 12; args=(12,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.008) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.008) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.008) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.001) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 9; args=(9,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" WHERE "lecture_lecture"."id" = 11; args=(11,)
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()

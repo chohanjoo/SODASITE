@@ -15,4 +15,4 @@ urlpatterns = [
 
 #서버올릴때 추가하기
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT, name='MEDIA_URL')

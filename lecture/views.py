@@ -4,6 +4,8 @@ from .forms import LectureForm
 from .models import Lecture
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
+import os
+from django.conf import settings
 
 def index(request):
     lecture_list = Lecture.objects.all().order_by('name')
@@ -34,13 +36,11 @@ def add_lecture(request):
     })
 
 def detail_lecture(request, pk):
-    lecture = get_object_or_404(Lecture, pk=pk)
+    lecture = Lecture.objects.get(pk=pk)
     form = LectureForm(instance = lecture)
     template_name = 'lecture/lecture_detail.html'
-    
     return render(request, template_name,{
-        'form' : form,
-        'lecture' : lecture
+        'form' : form
     })
 
 def edit_lecture(request, pk):
@@ -50,7 +50,7 @@ def edit_lecture(request, pk):
 
     if request.method == 'POST':
         form = form_cls(request.POST, request.FILES, instance = lecture)
-        print(request.FILES)
+
         if form.is_valid():
             lecture = form.save()
             return redirect(lecture)
