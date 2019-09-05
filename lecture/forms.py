@@ -13,6 +13,7 @@ class LectureForm(forms.ModelForm):
 
     year = forms.IntegerField(widget = forms.Select(choices=YEAR_CHOICES), label = '수강년도')
     semester = forms.IntegerField(widget = forms.Select(choices=SEMESTER), label = '수강학기')
+    examfile = forms.FileField(widget=forms.ClearableFileInput(attrs={'multiple': True}))
 
     def __init__(self, *args, **kwargs):
         super(LectureForm, self).__init__(*args, **kwargs)

@@ -21,8 +21,12 @@ def add_lecture(request):
 
     if request.method == 'POST':
         form = form_cls(request.POST, request.FILES)
-        
+        files = request.FILES.getlist('examfile')
         if form.is_valid():
+            for f in files:
+                tmp = open(os.path.join(os.getcwd(), 'media/lecture', f.name), 'wb+')
+                for chunk in f.chunks():
+                    tmp.write(chunk)
             lecture = form.save()
             return redirect(lecture)
         else :
