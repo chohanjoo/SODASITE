@@ -77,3 +77,6 @@ $ sudo docker run -d -p 8000:8000 sodasite/sodasite:v?
 그럼 ```http://<public IP>:8000```로 웹에서 확인이 가능하다.
 
 d옵션으로 백그라운드에서 컨테이너가 운영중이므로 언제, 어디서든 접속이 가능하다.
+
+
+### Jenkins webhook 등록
