@@ -80,4 +80,4 @@ d옵션으로 백그라운드에서 컨테이너가 운영중이므로 언제, �
 
 
 ### Jenkins webhook 등록
-CI/CD를 위한 jenkins webhook 등록
+CI/CD를 위한 jenkins webhook 등록이다.
