@@ -174,3 +174,8 @@
 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'lvdzaax5luec6qrd57zdqz08zuns0z2q'; args=('lvdzaax5luec6qrd57zdqz08zuns0z2q',)
 (0.000) BEGIN; args=None
 (0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('lvdzaax5luec6qrd57zdqz08zuns0z2q'); args=('lvdzaax5luec6qrd57zdqz08zuns0z2q',)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
