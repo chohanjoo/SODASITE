@@ -1,13 +1,82 @@
 {% extends "blog/layout.html" %}
+{% load static %}
 
 {% block content %}
+<!-- s-content
+    ================================================== -->
+<section class="s-content s-content--top-padding s-content--narrow">
 
-    <h2>{{ post.title }}</h2>
+    <article class="row entry format-standard">
 
-    {{ post.content|linebreaks }}
+            <!-- {% if post.photo %}
+            <div class="entry__media col-full">
+                <div class="entry__post-thumb">
+                    <img src="{{ post.photo.url }}" width="400" height="450" alt=""
+                        style="margin-left: auto; margin-right: auto; display: block;">
+                </div>
+            </div>
+            {% endif %} -->
 
-    <hr/>
+        
 
-    <a href="{% url "blog:post_list" %}">목록</a>
+        <div class="entry__header col-full">
+            <h1 class="entry__header-title display-1">
+                {{ post.title }}
+            </h1>
+            <ul class="entry__header-meta">
+                <li class="date">{{ post.created_at }}</li>
+                <li class="byline">
+                    By
+                    <a href="{% url 'profile'  post.writer.pk %}">{{ post.writer }}</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-full entry__main">
+
+            <p>{{ post.content |safe}}</p>
+
+
+            {% if post.project_file %}
+        <embed src="{{ post.project_file.url }}" width="1000" height="1000">
+
+        <br />
+        <br />
+        <!-- <a id="project_file" href="{{ post.project_file.url }}" download>{{ post.project_file }}</a> -->
+        {% endif %}
+
+
+            <div class="entry__author">
+                {% if post.writer.photo %}
+                <img src="{{ post.writer.photo.url }}" alt="">
+                {% else %}
+                <img src="{% static 'images/default_profile.jpg' %}">
+                {% endif %}
+                <div class="entry__author-about">
+                    <h5 class="entry__author-name">
+                        <span>Posted by</span>
+                        <a href="{% url 'profile' post.writer.pk %}">{{ post.writer }}</a>
+                    </h5>
+
+                    <div class="entry__author-desc">
+                        <p> 
+                            {{ post.writer.bio |truncatechars:150 | safe }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- s-entry__main -->
+
+    </article> <!-- end entry/article -->
+    <br><br><br>
+    {% if post.writer.pk == user.pk %}
+    <a href="{% url "blog:delete_post" pk=post.id %}" class="btn btn-danger pull-right">삭제</a>
+    <a href="{% url "blog:edit_post" pk=post.id %}" class="btn btn-secondary pull-right">수정</a>
+    {% endif %}
+    <a href="{% url "blog:post_list" %}" class="btn btn--primary pull-right">목록</a>
+    <br><br><br>
+
+</section> <!-- end s-content -->
 
 {% endblock %}

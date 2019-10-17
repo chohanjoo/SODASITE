@@ -1,0 +1,46 @@
+{% extends "lecture/layout.html" %}
+{% load static %}
+
+{% block content %}
+{% csrf_token %} 
+<section class="s-content s-content--top-padding s-content--narrow">
+    <article class="row entry format-standard">
+        
+        <div class="entry__header col-full">
+            <h1 class="entry__header-title display-1">
+                {{ form.name.value }}
+            </h1>
+            <ul class="entry__header-meta">
+                <label>{{ form.professor.value }}교수님</label>
+                <label>{{ form.year.value }}년 
+                    {% for semester in form.SEMESTER %}
+                        {% if form.semester.value == semester.0 %}
+                            {{ semester.1 }} 수강
+                        {% endif %}
+                    {% endfor %}
+                </label>
+                <!-- <li class="byline">
+                    By
+                    <a href="#0">{{ post.writer }}</a>
+                </li> -->
+            </ul>
+        </div>
+
+        <div class="col-full entry__main">
+            <h5>
+                {{ form.evalue.value }}
+            </h5>
+            <br><br><br>
+        </div> 
+        {% if form.examfile %}
+            <a href="/media/{{ form.examfile.value }}" download="/media/{{ form.examfile.value }}">족보다운로드</a>
+        {% endif %}
+    </article>
+
+    <input type="button" value="삭제" onClick="location.href = 'delete/'" class="btn btn-secondary pull-right">
+    <input type="button" value="수정" onClick="location.href = 'edit/'" class="btn btn-danger pull-right">
+    <input type="button" value="목록" onClick="location.href = '/lecture'" class="btn btn--primary pull-right">
+    <br><br><br>
+
+</section>
+{% endblock %}

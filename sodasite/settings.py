@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'z46o&&c0%jt72%+*17_-zfly$68a*4o_cws$r*hm^ri1+6g4-k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'blog',
     'accounts',
     'about',
+    'main',
+    'lecture',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
@@ -126,6 +129,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'sodasite', 'static'),
 ]
@@ -137,6 +142,19 @@ LOGIN_URL = reverse_lazy('login')
 LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = reverse_lazy('login')
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+# 이메일 사용시 설정
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'your email'
+EMAIL_HOST_PASSWORD = 'your email password'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 LOGGING = {
     'version': 1,
@@ -174,8 +192,19 @@ LOGGING = {
         'accounts': {
             'handlers': ['write'],
             'level': 'DEBUG',
+        },
+        'blog': {
+            'handlers' : ['write'],
+            'level': 'DEBUG',
         }
+
     }
 }
 
 INTERNAL_IPS = ['127.0.0.1']
+
+SUMMERNOTE_THEME = 'bs4'
+
+SUMMERNOTE_CONFIG = {
+    'attachment_filesize_limit': 10485760, # specify the file size (10M)
+}

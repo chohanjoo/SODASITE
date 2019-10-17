@@ -1,0 +1,125 @@
+{% extends "lecture/layout.html" %}
+{% load static %}
+{% csrf_token %} 
+
+{% block content %}
+<!-- s-content
+    ================================================== -->
+<section class="s-content s-content--top-padding">
+    <div class="row narrow">
+        <div class="col-full s-content__header" data-aos="fade-up">
+            <h1 class="display-1 display-1--with-line-sep">Lecture</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
+    <div class="row entries-wrap add-top-padding wide">
+        <div class="entries">
+            {% for lecture in lecture_list %}
+            <article class="col-block">
+                <div class="item-entry" data-aos="zoom-in">
+                    <div class="item-entry__thumb">
+                        <div class="item-entry__text">
+                            <h1 class="item-entry__thumb-link">
+                                <a href="{% url 'lecture:detail_lecture' lecture.pk %}" class="item-entry__thumb-link">
+                                    {{lecture.name}}
+                                </a>
+                                <img src="{% static 'images/default.jpg' %}"
+                                    srcset="{% static 'images/default.jpg' %} 1x, {% static 'images/default.jpg' %} 2x" width="400" height="450"
+                                    alt="">
+                            </h1>
+
+                            <h5 class="item-entry__title">{{lecture.professor}}
+                            </h5>
+                            
+                        </div>
+                    </div>
+                </div>
+            </article>
+            {% empty %}
+            <article class="col-block">
+                첫 강의평을 등록해주세요
+            </article>
+            {% endfor %}
+        </div> 
+    </div>
+    <div class="col-full s-content__header">
+        <input type = "button" value = "추가하기" onClick="location.href = 'add/'">
+    </div>
+
+    <!-- {% if is_paginated %}
+    <div class="row pagination-wrap">
+            <div class="col-full">
+    <nav class="pgn" data-aos="fade-up">
+            <div class="clearfix">
+                    <a class="btn btn--primary pull-right" href="{% url "blog:new_post" %}">New Post</a>
+            </div>
+        <ul class="pagination justify-content-center pagination-sm">
+            
+            {% if page_obj.has_previous %}
+            
+            {% if not search %}
+            <li class="page-item">
+                <a class="pgn__prev" href="{% url 'blog:post_list' %}?page={{ page_obj.previous_page_number }}"
+                    tabindex="-1">Prev</a>
+            </li>
+            {% else %}
+            
+            <li class="page-item">
+                <a class="pgn__prev"
+                    href="{% url 'blog:post_list' %}?{{search}}&page={{ page_obj.previous_page_number }}"
+                    tabindex="-1">Prev</a>
+            </li>
+            {% endif %}
+            {% else %}
+            <li class="page-item disabled">
+                <a class="pgn__prev" href="#" tabindex="-1">Prev</a>
+            </li>
+            {% endif %}
+            {% for object in page_obj.paginator.page_range %}
+            <li class="page-item"><a class="pgn__num"
+                    href="{% url 'blog:post_list' %}?page={{ forloop.counter }}">{{ forloop.counter }}</a></li>
+            {% endfor %}
+            {% if page_obj.has_next %}
+            {% if not search %}
+            <li class="page-item">
+                <a class="pgn__next" href="{% url 'blog:post_list' %}?page={{ page_obj.next_page_number }}">Next</a>
+            </li>
+            {% else %}
+            <li class="page-item">
+                <a class="pgn__next"
+                    href="{% url 'blog:post_list' %}?{{search}}&page={{ page_obj.next_page_number }}">Next</a>
+            </li>
+            {% endif %}
+            {% else %}
+            <li class="page-item disabled">
+                <a class="pgn__next" href="#">Next</a>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+    
+</div>
+</div>
+    {% endif %} -->
+    
+</section>
+
+{% endblock %}
+
+<!-- 수강후기 및 족보
+<table>
+    <tbody>
+        {% for lecture in lecture_list %}
+            <tr>
+                <td><a href="{% url "lecture:detail_lecture" lecture.pk %}">{{lecture.name}}</a></td>
+                <td>{{lecture.professor}}</td>
+                <td>
+                    <a href="{% url "lecture:edit_lecture" lecture.pk %}">
+                        수정
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<input type = "button" value = "추가" onClick="location.href = 'add/'"> -->

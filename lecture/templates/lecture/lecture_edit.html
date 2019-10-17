@@ -1,0 +1,48 @@
+{% extends 'lecture/layout.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'lecture/css/clean-blog.css' %}">
+{% block content %}
+<!-- Main Content -->
+<section class="s-content s-content--top-padding s-content--narrow">
+	<div class="container">
+		<div class="row narrow">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				
+				<form actions="lecture:edit_lecture" method="post" enctype="multipart/form-data" autocomplete="off" >
+					{% csrf_token %}
+					<table class="table ">
+						{{ form.as_table }}
+						<!-- <tr>
+							<td><label>강의명 :</label></td>
+							<td>{{ form.name }}</td>
+						</tr>
+						<tr>
+							<span>
+								<td><label>교수명 :</label></td>
+								<td>{{ form.professor}}</td>
+								<td>교수님</td>
+							</span>
+						</tr>
+						<tr>
+							<td><label>수강년도 :</label></td>
+							<td>{{ form.year }}</td>
+							<td><label>수강학기 :</label></td>
+							<td>{{ form.semester }}</td>
+						</tr>
+						<tr>
+							<td><label>강의평 :</label></td>
+							<td nowrap>{{ form.evalue }}</td>
+						</tr>
+						<tr>
+							<td><label>족보 :</label></td>
+							<td nowrap>{{ form.examfile }}</td>
+						</tr> -->
+					</table>
+					<a href="{% url 'lecture:index' %}" class="btn btn-secondary pull-right">목록</a>
+					<input type="submit" value="수정" class="btn btn--primary pull-right" />
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

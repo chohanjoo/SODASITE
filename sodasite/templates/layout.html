@@ -1,121 +1,185 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="no-js" lang="en">
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Soda</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>SODA BLOG</title>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!-- Bootstrap core CSS -->
-  <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    
 
-  <!-- Custom fonts for this template -->
-  <link href="{% static "vendor/fontawesome-free/css/all.min.css" %}" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- script
+    ================================================== -->
+    <script src="{% static 'js/modernizr.js' %}"></script>
 
-  <!-- Custom styles for this template -->
-  <link href="{% static "blog/css/clean-blog.min.css" %}" rel="stylesheet">
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
 
 </head>
 
-<body>
+<body id="top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="{% url "blog:index" %}">SODA</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{% url "blog:index" %}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url "about" %}">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="post.html">Sample Post</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          {% if user.is_authenticated %}
-          <li class="nav-item">
-              <a class="nav-link" href="{% url "logout" %}">Logout</a>
-          </li>
-          {% else %}
-          <li class="nav-item">
-              <a class="nav-link" href="{% url "login" %}">Login</a>
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  {% block header %}
-  
-  {% endblock %}
-
-  {% block content %}
-
-  {% endblock %}
-
-
-  <hr>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-      </div>
     </div>
-  </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
-  <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="{% static "blog/js/clean-blog.min.js" %}"></script>
+    <!-- header
+    ================================================== -->
+    <header class="s-header header">
+
+        <div class="header__logo">
+            <a class="logo" href="{% url 'main:index' %}">
+                <img src="{% static 'images/soda_logo2.svg' %}" alt="Homepage" >
+            </a>
+        </div> <!-- end header__logo -->
+
+        <a class="header__search-trigger" href="#0"></a>
+        <div class="header__search">
+
+            <form role="search" method="get" class="header__search-form" action="#">
+                <label>
+                    <span class="hide-content">Search for:</span>
+                    <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
+                </label>
+                <input type="submit" class="search-submit" value="Search">
+            </form>
+
+            <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
+
+        </div>  <!-- end header__search -->
+
+        <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+        <nav class="header__nav-wrap">
+
+            <h2 class="header__nav-heading h6">Navigate to</h2>
+
+            <ul class="header__nav">
+                {% if request.path == '/'%}
+                <li class="current"><a href="{% url 'main:index' %}" title="">Home</a></li>
+                {% else %}
+                <li><a href="{% url 'main:index' %}" title="">Home</a></li>
+                {% endif %}
+                
+                {% if 'blog' in request.path %}
+                <li class="current"><a href="{% url 'blog:post_list' %}" title="">Project</a></li>
+                {% else %}
+                <li><a href="{% url 'blog:post_list' %}" title="">Project</a></li>
+                {% endif %}
+
+                {% if 'lecture' in request.path %}
+                <li class="current"><a href="{% url 'lecture:index' %}" title="">Lecture</a></li>
+                {% else %}
+                <li><a href="{% url 'lecture:index' %}" title="">Lecture</a></li>
+                {% endif %}
+
+                {% if 'about' in request.path %}
+                <li class="current"><a href="{% url 'about:about' %}" title="">About</a></li>
+                {% else %}
+                <li><a href="{% url 'about:about' %}" title="">About</a></li>
+                {% endif %}
+
+                {% if user.is_authenticated %}
+                <li class="has-children">
+                    <a href="#0" title="">My Page</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'profile' user.pk %}" title="">{{ user.username }}</a></li>
+                        {% if 'account' in request.path %}
+                        <li class="current"><a href="{% url 'logout' %}" title="">Logout</a></li>
+                        {% else %}
+                        <li><a href="{% url 'logout' %}" title="">Logout</a></li>
+                        {% endif %}
+                    </ul>
+                </li>
+          
+                {% else %}
+                    {% if 'account' in request.path %}
+                    <li class="current"><a href="{% url 'login' %}" title="">Login</a></li>
+                    {% else %}
+                    <li><a href="{% url 'login' %}" title="">Login</a></li>
+                    {% endif %}
+                {% endif %}
+            </ul> <!-- end header__nav -->
+
+            <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+
+        </nav> <!-- end header__nav-wrap -->
+
+    </header> <!-- s-header -->
+
+
+ 
+    {% block content %}
+    
+    {% endblock %}
+  
+    <!-- s-footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="s-footer__main">
+            <div class="row">
+                
+                <div class="col-six tab-full s-footer__about">
+                        
+                    <h4>About Soda</h4>
+
+                    <p>저희 소모임은 오픈소스를 사용하여 프로젝트를 진행하는 소모임입니다.</p>
+
+                </div> <!-- end s-footer__about -->
+
+                <div class="col-six tab-full s-footer__subscribe">
+                        
+                    <h4>현재 진행중인 프로젝트</h4>
+
+                    <p>
+                        SODA 홈페이지 구축<br>
+                        c언어 채팅 프로그램 구현<br>
+                        c언어 고스톱 구현<br>
+                    </p>
+
+                    
+
+                </div> <!-- end s-footer__subscribe -->
+
+            </div>
+        </div> <!-- end s-footer__main -->
+
+        
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 
 </body>
 

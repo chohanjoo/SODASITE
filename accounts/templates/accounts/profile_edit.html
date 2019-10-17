@@ -1,0 +1,25 @@
+{% extends 'accounts/layout.html' %}
+{% load static %}
+
+
+{% block content %}
+<!-- Main Content -->
+<section class="s-content s-content--top-padding s-content--narrow">
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+            <form actions="" method="post" enctype="multipart/form-data" autocomplete="off">
+                {% csrf_token %}
+                <table class="table table-bordered">
+                    {{ form.as_table }}
+                </table>
+                <input type="submit" value="저장하기" class="btn btn-primary" />
+                <a href="{% url "profile" user.pk %}" class="btn btn-secondary">목록으로</a>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+{% endblock %}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    
+</head>
+<body>
+    {{ user }}님, 아래 링크를 클릭해서 계정을 활성화해주세요.
+    <br/><br/>
+    <a href="http://{{ domain }}{% url 'activate' uidb64=uid token=token %}">http://{{ domain }}{% url 'activate' uidb64=uid token=token %}</a>
+</body>
+</html>

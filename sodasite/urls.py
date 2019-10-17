@@ -17,13 +17,17 @@ from django.contrib import admin
 from django.urls import path, include
 from django.shortcuts import redirect
 from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
     path('blog/',include('blog.urls')),
+    path('lecture/',include('lecture.urls')),
     path('about/',include('about.urls')),
-    path('', lambda req: redirect('blog:index'), name='root'),
+    path('', include('main.urls')),
+    path('summernote/', include('django_summernote.urls')),
+    # path('', lambda req: redirect('blog:post_list'), name='root'),
 ]
 
 if settings.DEBUG:
@@ -32,3 +36,5 @@ if settings.DEBUG:
         path('__debug__/', include(debug_toolbar.urls)),
 
     ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
