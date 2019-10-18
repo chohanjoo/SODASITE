@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'main',
     'lecture',
     'django_summernote',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -208,3 +209,5 @@ SUMMERNOTE_THEME = 'bs4'
 SUMMERNOTE_CONFIG = {
     'attachment_filesize_limit': 10485760, # specify the file size (10M)
 }
+
+AUTH_USER_MODEL = 'accounts.User'#'auth.User'
