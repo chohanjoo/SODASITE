@@ -13,7 +13,8 @@ from django import forms
 
 from django_summernote.widgets import SummernoteWidget
 
-# class SignupForm(UserCreationForm):
+class SignupForm(UserCreationForm):
+    pass
 #     class Meta:
         # email = forms.EmailField(
         #     label=_("Input email"),

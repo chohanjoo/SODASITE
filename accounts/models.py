@@ -26,7 +26,7 @@ class Profile(models.Model):
         return reverse('profile', kwargs={'pk':self.user.primary_key})
 
 class Student(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete = models.CASCADE, primary_key=True)
+    # user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete = models.CASCADE, primary_key=True)
     name = models.CharField(max_length=20) 
     number = models.CharField(max_length=8)
     email = models.EmailField()
