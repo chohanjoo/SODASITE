@@ -10,7 +10,6 @@ def readDataToExcel():
     # ws = wb.get_sheet_by_name("Sheet1")
     
     data = []
-    # 국영수 점수를 읽기
     for r in ws.rows:
         name = r[0].value
         studentNumber = r[1].value
