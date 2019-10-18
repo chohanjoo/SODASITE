@@ -1,5 +1,6 @@
 django
 django-summernote
 django-debug-toolbar
+django_extensions
 openpyxl
 pillow

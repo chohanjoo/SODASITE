@@ -149,7 +149,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-# ์ด๋ฉ”์ผ ์ฌ์ฉ์ ์ค์ •
+# ?ด๋ฉ”์ผ ?ฌ?ฉ? ?ค? •
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'your email'
 EMAIL_HOST_PASSWORD = 'your email password'
