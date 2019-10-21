@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'z46o&&c0%jt72%+*17_-zfly$68a*4o_cws$r*hm^ri1+6g4-k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -149,10 +149,10 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-# ?ù¥Î©îÏùº ?Ç¨?ö©?ãú ?Ñ§?†ï
+# ?ÔøΩÔøΩÎ©îÏùº ?ÔøΩÔøΩ?ÔøΩÔøΩ?ÔøΩÔøΩ ?ÔøΩÔøΩ?ÔøΩÔøΩ
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'your email'
-EMAIL_HOST_PASSWORD = 'your email password'
+EMAIL_HOST_USER = 'vjswl132@gmail.com'#'your email'
+EMAIL_HOST_PASSWORD = 'whwh1598'#'your email password'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
@@ -210,4 +210,6 @@ SUMMERNOTE_CONFIG = {
     'attachment_filesize_limit': 10485760, # specify the file size (10M)
 }
 
-AUTH_USER_MODEL = 'accounts.User'#'auth.User'
+AUTH_USER_MODEL = 'accounts.User'
+
+ADMIN_EMAIL = 'johanjoo@naver.com'

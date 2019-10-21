@@ -47,8 +47,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.views.generic import CreateView,UpdateView
 from django.conf import settings
-from django.contrib.auth.models import User
-from .forms import SignupForm, ProfileForm
+# from django.contrib.auth.models import User
+from .forms import SignupForm, ProfileForm, LoginForm
 from django.contrib.auth import login as auth_login
 from django.contrib.auth.views import LoginView
 from django.core.exceptions import ValidationError
@@ -60,7 +60,7 @@ from django.contrib.auth.forms import (
 
 import logging
 from .readExcel import readDataToExcel
-from .models import Student,Profile
+from .models import Student,Profile,User
 
 from django.utils.encoding import force_text
 from django.utils.http import urlsafe_base64_decode
@@ -112,38 +112,44 @@ def user_activate(request, uidb64, token):
 
 def signup(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = SignupForm(request.POST)
+        logger.debug('signup POST')
+        # form = UserCreationForm(request.POST)
         if form.is_valid():
+            logger.debug('Signup form.isvalid() in')
             user = form.save(commit=False)
-            user.is_active = False
+            # user.is_active = False
 
-            try:
-                student = Student.objects.get(name=user)
-            except:
-                student = None
-            if student:
-                user.save()
-                # send email for new user
-                subject = ('Welcome To Soda Site! Confirm Your Email')
-                message = render_to_string('accounts/account_activate_email.html',{
-                    'user' : student.name,
-                    'domain' : 'localhost:8000',
-                    'uid' : urlsafe_base64_encode(force_bytes(user.pk)).decode('utf-8'),
-                    'token' : account_activation_token.make_token(user)
-                })
+            # try:
+            #     student = Student.objects.get(name=user)
+            # except:
+            #     student = None
+            # if student:
+            user.save()
+            # send email for new user
+            subject = ('Welcome To Soda Site! Confirm Your Email')
+            message = render_to_string('accounts/account_activate_email.html',{
+                'user' : user.username,
+                'domain' : 'localhost:8000',
+                'uid' : urlsafe_base64_encode(force_bytes(user.pk)).decode('utf-8'),
+                'token' : account_activation_token.make_token(user)
+            })
 
-                text_content = strip_tags(message)
-                
-                send_to = [student.email]
-                msg = EmailMultiAlternatives(subject, text_content, 'vjswl132@gmail.com', send_to)
-                msg.attach_alternative(message,"text/html")
-                msg.send()
+            text_content = strip_tags(message)
+            
+            send_to = ['johanjoo@naver.com']#[settings.ADMIN_EMAIL]#[student.email]
+            msg = EmailMultiAlternatives(subject, text_content, 'vjswl132@gmail.com', send_to)
+            msg.attach_alternative(message,"text/html")
+            msg.send()
 
             return redirect(settings.LOGIN_URL)
         else:
+            logger.debug(form.errors)
             ValidationError(_('Invalid value'), code='invalid')
     else:
-        form = UserCreationForm()
+        form = SignupForm()
+        logger.debug('signup View GET')
+        # form = UserCreationForm()
     return render(request, 'accounts/signup.html',{
         'form':form,
     })
@@ -151,7 +157,7 @@ def signup(request):
 
 class MyLoginView(LoginView):
     model = User
-    form_class = AuthenticationForm
+    form_class = LoginForm
     template_name = 'accounts/login.html'
 
     def get_success_url(self):

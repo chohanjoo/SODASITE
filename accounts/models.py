@@ -1,17 +1,13 @@
 from django.db import models
 from django.conf import settings
 from django.db.models.signals import post_save
-
-# from django.utils.encoding import force_bytes
-# from django.utils.http import urlsafe_base64_encode
-# from django.template.loader import render_to_string
-# from django.core.mail import EmailMultiAlternatives
-# from django.utils.html import strip_tags
-
-# from django.utils.encoding import force_bytes
-# from django.utils.http import urlsafe_base64_encode
-# from .tokens import account_activation_token
 from django.urls import reverse
+from django.core.mail import send_mail  
+from django.contrib.auth.models import PermissionsMixin  
+from django.contrib.auth.base_user import AbstractBaseUser  
+from django.utils.translation import ugettext_lazy as _
+
+from .manager import UserManager
 
 class Profile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete = models.CASCADE, primary_key=True)
@@ -52,18 +48,6 @@ def on_post_save_for_user(sender, **kwargs):
 
 post_save.connect(on_post_save_for_user,sender=settings.AUTH_USER_MODEL)
 
-# class Student(models.Model):
-#     name = models.CharField(max_length=20)
-#     studentNumber = models.CharField(max_length=8)
-#     email = models.EmailField()
-
-from django.db import models  
-from django.core.mail import send_mail  
-from django.contrib.auth.models import PermissionsMixin  
-from django.contrib.auth.base_user import AbstractBaseUser  
-from django.utils.translation import ugettext_lazy as _
-
-from .manager import UserManager
 
 
 class User(AbstractBaseUser, PermissionsMixin):  
@@ -72,7 +56,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     student_number = models.CharField(_('student_number'),max_length=8,unique=True)
     # last_name = models.CharField(_('last name'), max_length=30, blank=True)
     date_joined = models.DateTimeField(_('date joined'), auto_now_add=True)
-    is_active = models.BooleanField(_('active'), default=True)
+    is_active = models.BooleanField(_('active'), default=False)
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
 

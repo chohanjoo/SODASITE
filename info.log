@@ -75,3 +75,136 @@ Login Success!!
 Login Success!!
 Login Success!!
 Login Success!!
+signup View GET
+signup POST
+signup POST
+error
+signup View GET
+signup POST
+error
+signup View GET
+signup POST
+error
+signup View GET
+signup POST
+signup POST
+<ul class="errorlist"><li>password2<ul class="errorlist"><li>This password is too common.</li></ul></li></ul>
+signup View GET
+signup POST
+<ul class="errorlist"><li>password2<ul class="errorlist"><li>This password is too common.</li></ul></li></ul>
+signup POST
+Signup form.isvalid() in
+signup View GET
+signup View GET
+signup View GET
+signup POST
+Signup form.isvalid() in
+signup View GET
+signup POST
+Signup form.isvalid() in
+signup View GET
+signup POST
+Signup form.isvalid() in
+LoginForm - clean
+LoginForm - clean
+LoginForm - clean
+LoginForm - clean
+None,whgkswnqkqh
+LoginForm - clean
+None,whgkswnqkqh
+LoginForm - clean
+00000000,whgkswnqkqh
+LoginForm - clean
+00000000,whgkswnqkqh
+LoginForm - clean
+00000000,whgkswnqkqh
+LoginForm - clean
+00000000,whgkswnqkqh
+LoginForm - clean
+00000000,whgkswnqkqh
+00000000
+LoginForm - clean
+00000000,whgkswnqkqh
+00000000
+LoginForm - clean
+00000000,whgkswnqkqh
+True
+LoginForm - clean
+00,None
+LoginForm - clean
+00000000,whgkswnqkqh
+True
+LoginForm - clean
+00000000,whgkswnqkqh
+LoginForm - clean
+00000000,whgkswnqkqh
+user_cache : 00000000
+LoginForm - clean
+00000000,whgkswnqkqh
+user_cache : 00000000
+LoginForm - clean
+00000000,whgkswnqkqh
+user_cache : 00000000
+cleaned_data : {'password': 'whgkswnqkqh', 'student_number': '00000000'}
+Login Success!!
+signup View GET
+signup POST
+<ul class="errorlist"><li>password2<ul class="errorlist"><li>The password is too similar to the name.</li></ul></li></ul>
+signup POST
+Signup form.isvalid() in
+signup POST
+<ul class="errorlist"><li>student_number<ul class="errorlist"><li>User with this Student_number already exists.</li></ul></li></ul>
+signup POST
+Signup form.isvalid() in
+signup POST
+<ul class="errorlist"><li>student_number<ul class="errorlist"><li>User with this Student_number already exists.</li></ul></li></ul>
+signup View GET
+signup POST
+Signup form.isvalid() in
+Login Success!!
+------Login Success!!
+LoginForm - clean
+None,whgkswnqkqh
+cleaned_data : {'username': '20160101', 'password': 'whgkswnqkqh'}
+LoginForm - clean
+None,whgkswnqkqh
+cleaned_data : {'username': '00000000', 'password': 'whgkswnqkqh'}
+LoginForm - clean
+None,whgkswnqkqh
+cleaned_data : {'username': '00000000', 'password': 'whgkswnqkqh'}
+LoginForm - clean
+20160333,whgkswnqkqh
+user_cache : None
+LoginForm - clean
+20160101,whgkswnqkqh
+user_cache : None
+LoginForm - clean
+20160101,whgkswnqkqh
+user_cache : None
+LoginForm - clean
+20160101,whgkswnqkqh
+user_cache : None
+LoginForm - clean
+20160101,whgkswnqkqh
+user_cache : None
+LoginForm - clean
+20160101,whgkswnqkqh
+user_cache : None
+LoginForm - clean
+20160101,whgkswnqkqh
+user_cache : None
+LoginForm - clean
+20160101,whgkswnqkqh
+user_cache : None
+LoginForm - clean
+00000000,whgkswnqkqh
+user_cache : 00000000
+cleaned_data : {'password': 'whgkswnqkqh', 'student_number': '00000000'}
+signup View GET
+signup POST
+<ul class="errorlist"><li>password2<ul class="errorlist"><li>This password is too short. It must contain at least 8 characters.</li></ul></li></ul>
+signup POST
+Signup form.isvalid() in
+LoginForm - clean
+00000001,whwh1598
+user_cache : None
