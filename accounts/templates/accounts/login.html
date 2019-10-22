@@ -1,90 +1,68 @@
 {% extends 'layout.html' %}
 
 {% load static %}
-
-{% block header %}
-<!-- Page Header -->
-<header class="masthead" style="background-image: url({% static "about/img/about-bg.jpg" %})">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="page-heading">
-          <h1>SODA BLOG</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+{% block head %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<style type="text/css">
+    .input[type=text] {
+        -webkit-ime-mode: inactive;
+        -moz-ime-mode: inactive;
+        -ms-ime-mode: inactive;
+        ime-mode: inactive;
+    }
+</style>
 
 {% endblock %}
 
 {% block content %}
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-<style type="text/css"> 
-    .input[type=text] { 
-    -webkit-ime-mode:inactive; 
-    -moz-ime-mode:inactive; 
-    -ms-ime-mode:inactive; 
-    ime-mode:inactive; 
-    } 
-    </style> 
 
 <section class="s-content s-content--top-padding">
-<div class="container">
-  
-    <div class="row">
-        <aside class="col-sm-5">
+    <div class="container">
+        <div class="row">
+            <div class="row-custom">
+                <aside class="col">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <div class="card">
+                            <article class="card-body">
+                                <h2 class="card-title text-center mb-4 mt-1">Login</h2>
+                                <hr>
+                                <p class="text-success text-center">Fill in the blanks below.</p>
 
-        </aside> <!-- col.// -->
-        <aside class="col-sm-4">
-            <br><br><br><br>
-            <form action="" method="post">
-                {% csrf_token %}
-                <div class="card">
-                    <article class="card-body">
-                        <h2 class="card-title text-center mb-4 mt-1">Login</h2>
-                        <hr>
-                        <p class="text-success text-center">Fill in the blanks below.</p>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                        </div>
+                                        <input name="student_number" class="form-control" placeholder="Student Number"
+                                            type="text">
+                                    </div> <!-- input-group.// -->
+                                </div> <!-- form-group// -->
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                        </div>
+                                        <input name="password" class="form-control" placeholder="******"
+                                            type="password">
+                                    </div> <!-- input-group.// -->
+                                </div> <!-- form-group// -->
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block btn-lg pull-width"> Login
+                                    </button>
+                                    <a href="{% url 'signup' %}" class="float-right btn btn-outline-primary">Sign up</a>
+                                    </p>
+                                </div> <!-- form-group// -->
+                            </article>
+                        </div> <!-- card.// -->
+                    </form>
+                </aside> <!-- col.// -->
+            </div> <!-- row.// -->
+        </div>
+    </div>
 
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                                </div>
-                                <input name="student_number" class="form-control" placeholder="Student Number">
-                            </div> <!-- input-group.// -->
-                        </div> <!-- form-group// -->
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                                </div>
-                                <input name="password" class="form-control" placeholder="******" type="password">
-                            </div> <!-- input-group.// -->
-                        </div> <!-- form-group// -->
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block btn-lg pull-width"> Login </button>
-                        </div> <!-- form-group// -->
-                        <p class="text-left"><a href="#" class="btn ">Forgot password?</a>
-                        <a href="{% url 'signup' %}" class="float-right btn btn-outline-primary">Sign up</a></p>
-                        
+    <br><br><br>
 
-                    </article>
-                </div> <!-- card.// -->
-            </form>
-        </aside> <!-- col.// -->
-    </div> <!-- row.// -->
-
-</div>
-</section>
-<!--container end.//-->
-
-<br><br><br>
-
+</section> <!-- end s-content -->
 {% endblock %}

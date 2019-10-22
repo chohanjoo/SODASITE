@@ -2065,3 +2065,84 @@ DROP TABLE "accounts_user__old"; (params ())
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."created_at" DESC  LIMIT 3; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "lecture_lecture"."id", "lecture_lecture"."name", "lecture_lecture"."professor", "lecture_lecture"."year", "lecture_lecture"."semester", "lecture_lecture"."evalue", "lecture_lecture"."examfile", "lecture_lecture"."created_at", "lecture_lecture"."updated_at" FROM "lecture_lecture" ORDER BY "lecture_lecture"."name" ASC; args=()
+(0.001) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."email", "accounts_user"."username", "accounts_user"."student_number", "accounts_user"."date_joined", "accounts_user"."is_active", "accounts_user"."is_staff", "accounts_user"."is_superuser" FROM "accounts_user" WHERE "accounts_user"."student_number" = '00000000'; args=('00000000',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'jtbeiq4r697sroaiby38bixi4rj6l6dz'  LIMIT 1; args=('jtbeiq4r697sroaiby38bixi4rj6l6dz',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'jtbeiq4r697sroaiby38bixi4rj6l6dz', 'NmNjNjc4Y2Y0NmJhZGQ0Yjg4ZjUxNzJjYTI1MWI2ZmNkMzk0YzVhZDp7fQ==', '2019-11-05 13:47:21.519019'; args=('jtbeiq4r697sroaiby38bixi4rj6l6dz', 'NmNjNjc4Y2Y0NmJhZGQ0Yjg4ZjUxNzJjYTI1MWI2ZmNkMzk0YzVhZDp7fQ==', '2019-11-05 13:47:21.519019')
+(0.000) BEGIN; args=None
+(0.000) UPDATE "accounts_user" SET "last_login" = '2019-10-22 13:47:21.542338' WHERE "accounts_user"."id" = 9; args=('2019-10-22 13:47:21.542338', 9)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'MzcwOWFhNzgxZWU0Zjk4NGEwZmYwMmE0MTVhMjA5YzA5ZmJlMzU1ZDp7Il9hdXRoX3VzZXJfaWQiOiI5IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NjljMTA1MDkzZTIwOGIwZjIzMmM5ZTdlZTM1ZTc3YWEyMzI1NjFlIn0=', "expire_date" = '2019-11-05 13:47:21.565210' WHERE "django_session"."session_key" = 'jtbeiq4r697sroaiby38bixi4rj6l6dz'; args=('MzcwOWFhNzgxZWU0Zjk4NGEwZmYwMmE0MTVhMjA5YzA5ZmJlMzU1ZDp7Il9hdXRoX3VzZXJfaWQiOiI5IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NjljMTA1MDkzZTIwOGIwZjIzMmM5ZTdlZTM1ZTc3YWEyMzI1NjFlIn0=', '2019-11-05 13:47:21.565210', 'jtbeiq4r697sroaiby38bixi4rj6l6dz')
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-22 13:47:21.583178' AND "django_session"."session_key" = 'jtbeiq4r697sroaiby38bixi4rj6l6dz'); args=('2019-10-22 13:47:21.583178', 'jtbeiq4r697sroaiby38bixi4rj6l6dz')
+(0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."email", "accounts_user"."username", "accounts_user"."student_number", "accounts_user"."date_joined", "accounts_user"."is_active", "accounts_user"."is_staff", "accounts_user"."is_superuser" FROM "accounts_user" WHERE "accounts_user"."id" = 9; args=(9,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-22 13:47:24.481349' AND "django_session"."session_key" = 'jtbeiq4r697sroaiby38bixi4rj6l6dz'); args=('2019-10-22 13:47:24.481349', 'jtbeiq4r697sroaiby38bixi4rj6l6dz')
+(0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."email", "accounts_user"."username", "accounts_user"."student_number", "accounts_user"."date_joined", "accounts_user"."is_active", "accounts_user"."is_staff", "accounts_user"."is_superuser" FROM "accounts_user" WHERE "accounts_user"."id" = 9; args=(9,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'jtbeiq4r697sroaiby38bixi4rj6l6dz'; args=('jtbeiq4r697sroaiby38bixi4rj6l6dz',)
+(0.000) BEGIN; args=None
+(0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('jtbeiq4r697sroaiby38bixi4rj6l6dz'); args=('jtbeiq4r697sroaiby38bixi4rj6l6dz',)
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."email", "accounts_user"."username", "accounts_user"."student_number", "accounts_user"."date_joined", "accounts_user"."is_active", "accounts_user"."is_staff", "accounts_user"."is_superuser" FROM "accounts_user" WHERE "accounts_user"."student_number" = '00000000'; args=('00000000',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'ctfgco3swj50c865hxcvs6p3lygl4yul'  LIMIT 1; args=('ctfgco3swj50c865hxcvs6p3lygl4yul',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'ctfgco3swj50c865hxcvs6p3lygl4yul', 'NmNjNjc4Y2Y0NmJhZGQ0Yjg4ZjUxNzJjYTI1MWI2ZmNkMzk0YzVhZDp7fQ==', '2019-11-05 14:28:11.338899'; args=('ctfgco3swj50c865hxcvs6p3lygl4yul', 'NmNjNjc4Y2Y0NmJhZGQ0Yjg4ZjUxNzJjYTI1MWI2ZmNkMzk0YzVhZDp7fQ==', '2019-11-05 14:28:11.338899')
+(0.000) BEGIN; args=None
+(0.000) UPDATE "accounts_user" SET "last_login" = '2019-10-22 14:28:11.356215' WHERE "accounts_user"."id" = 9; args=('2019-10-22 14:28:11.356215', 9)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'MzcwOWFhNzgxZWU0Zjk4NGEwZmYwMmE0MTVhMjA5YzA5ZmJlMzU1ZDp7Il9hdXRoX3VzZXJfaWQiOiI5IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NjljMTA1MDkzZTIwOGIwZjIzMmM5ZTdlZTM1ZTc3YWEyMzI1NjFlIn0=', "expire_date" = '2019-11-05 14:28:11.376514' WHERE "django_session"."session_key" = 'ctfgco3swj50c865hxcvs6p3lygl4yul'; args=('MzcwOWFhNzgxZWU0Zjk4NGEwZmYwMmE0MTVhMjA5YzA5ZmJlMzU1ZDp7Il9hdXRoX3VzZXJfaWQiOiI5IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NjljMTA1MDkzZTIwOGIwZjIzMmM5ZTdlZTM1ZTc3YWEyMzI1NjFlIn0=', '2019-11-05 14:28:11.376514', 'ctfgco3swj50c865hxcvs6p3lygl4yul')
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_project"; args=()
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-22 14:28:11.394194' AND "django_session"."session_key" = 'ctfgco3swj50c865hxcvs6p3lygl4yul'); args=('2019-10-22 14:28:11.394194', 'ctfgco3swj50c865hxcvs6p3lygl4yul')
+(0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."email", "accounts_user"."username", "accounts_user"."student_number", "accounts_user"."date_joined", "accounts_user"."is_active", "accounts_user"."is_staff", "accounts_user"."is_superuser" FROM "accounts_user" WHERE "accounts_user"."id" = 9; args=(9,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-22 14:28:14.761780' AND "django_session"."session_key" = 'ctfgco3swj50c865hxcvs6p3lygl4yul'); args=('2019-10-22 14:28:14.761780', 'ctfgco3swj50c865hxcvs6p3lygl4yul')
+(0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."email", "accounts_user"."username", "accounts_user"."student_number", "accounts_user"."date_joined", "accounts_user"."is_active", "accounts_user"."is_staff", "accounts_user"."is_superuser" FROM "accounts_user" WHERE "accounts_user"."id" = 9; args=(9,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'ctfgco3swj50c865hxcvs6p3lygl4yul'; args=('ctfgco3swj50c865hxcvs6p3lygl4yul',)
+(0.000) BEGIN; args=None
+(0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('ctfgco3swj50c865hxcvs6p3lygl4yul'); args=('ctfgco3swj50c865hxcvs6p3lygl4yul',)
+(0.000) SELECT (1) AS "a" FROM "accounts_user" WHERE "accounts_user"."student_number" = '20203030'  LIMIT 1; args=('20203030',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "accounts_user" ("password", "last_login", "email", "username", "student_number", "date_joined", "is_active", "is_staff", "is_superuser") VALUES ('pbkdf2_sha256$120000$YLAwlDfCWDgF$A7/s5+hVzFNRQabH+vdgzHmelqhHrBXoBeX/b9b1g1Q=', NULL, 'johanjoo@naver.com', 'testtest', '20203030', '2019-10-22 14:34:52.740334', 0, 0, 0); args=['pbkdf2_sha256$120000$YLAwlDfCWDgF$A7/s5+hVzFNRQabH+vdgzHmelqhHrBXoBeX/b9b1g1Q=', None, 'johanjoo@naver.com', 'testtest', '20203030', '2019-10-22 14:34:52.740334', False, False, False]
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "accounts_profile" ("user_id", "photo", "intro", "website") SELECT 16, '', '', ''; args=(16, '', '', '')
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT (1) AS "a" FROM "accounts_user" WHERE "accounts_user"."student_number" = '10102020'  LIMIT 1; args=('10102020',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "accounts_user" ("password", "last_login", "email", "username", "student_number", "date_joined", "is_active", "is_staff", "is_superuser") VALUES ('pbkdf2_sha256$120000$74Er2jHm1au4$GPMfK8FHvkuedbzTE5vBbkuvkTe9atiMQJIBOkaQWt8=', NULL, 'johanjoo@naver.com', 'test1123456', '10102020', '2019-10-22 14:36:00.823503', 0, 0, 0); args=['pbkdf2_sha256$120000$74Er2jHm1au4$GPMfK8FHvkuedbzTE5vBbkuvkTe9atiMQJIBOkaQWt8=', None, 'johanjoo@naver.com', 'test1123456', '10102020', '2019-10-22 14:36:00.823503', False, False, False]
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "accounts_profile" ("user_id", "photo", "intro", "website") SELECT 17, '', '', ''; args=(17, '', '', '')
