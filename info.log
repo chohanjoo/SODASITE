@@ -360,3 +360,8 @@ signup View GET
 signup View GET
 signup POST
 Signup form.isvalid() in
+LoginForm - clean
+12345678,whgkswnqkqh
+user_cache : 12345678
+cleaned_data : {'student_number': '12345678', 'password': 'whgkswnqkqh'}
+Login Success!!

@@ -1532,12 +1532,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .entries .col-block {
-  -webkit-box-flex: 0 0 25%;
-  -moz-box-flex: 0 0 25%;
-  -webkit-flex: 0 0 25%;
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-  max-width: 25%;
+  -webkit-box-flex: 0 0 3%;
+  -moz-box-flex: 0 0 33%;
+  -webkit-flex: 0 0 33%;
+  -ms-flex: 0 0 33%;
+  flex: 0 0 33%;
+  max-width: 100%;
   padding: 0 20px;
   margin-bottom: 4.2rem;
 }
@@ -1545,9 +1545,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .entries .item-entry {
   height: 100%;
   background-color: #FFFFFF;
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
   text-align: center;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 3px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   position: relative;
 }
