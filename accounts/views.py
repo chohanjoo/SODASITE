@@ -1,53 +1,8 @@
-# from django.shortcuts import redirect
-# from django.contrib.auth.models import User
-# # from django.contrib import auth
-# from django.contrib.auth.views import LoginView
-# from django.views.generic.edit import CreateView
-# from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-# from django.urls import reverse_lazy
-# from django.contrib.auth import login as auth_login
-
-# class UserCreateView():
-#     template_name = 'accounts/register.html'
-#     form_cls = UserCreationForm
-#     success_url = reverse_lazy('register_done')
-
-# class UserCreateDoneTV():
-#     template_name = 'accounts/register_done.html'
-
-# class MyLoginView(LoginView):
-#     model = User
-#     form_cls = AuthenticationForm
-#     template_name = 'accounts/login.html'
-#     success_url = reverse_lazy('main:index')
-
-#     def form_valid(self,form):
-#         auth_login(self.request, form.get_user())
-#         return redirect(self.get_success_url())
-
-# def signup(request):
-#     if request.method == 'POST':
-        
-
-#     return render(request, 'signup.html')
-
-# def login(request):
-#     return render(request, 'login.html')
-
-# def logout(request):
-#     return render(request, 'logout.html')
-
-
-
-
-
-
 from django.shortcuts import render,resolve_url,redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.views.generic import CreateView,UpdateView
 from django.conf import settings
-# from django.contrib.auth.models import User
 from .forms import SignupForm, ProfileForm, LoginForm
 from django.contrib.auth import login as auth_login
 from django.contrib.auth.views import LoginView
@@ -57,7 +12,6 @@ from django.contrib.auth.forms import (
     AuthenticationForm
 )   
 
-
 import logging
 from .readExcel import readDataToExcel
 from .models import Student,Profile,User
@@ -66,14 +20,11 @@ from django.utils.encoding import force_text
 from django.utils.http import urlsafe_base64_decode
 from .tokens import account_activation_token
 
-
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 from django.template.loader import render_to_string
 from django.core.mail import EmailMultiAlternatives
 from django.utils.html import strip_tags
-
-
 
 logger = logging.getLogger(__name__)
 # Create your views here.
@@ -164,8 +115,13 @@ class MyLoginView(LoginView):
         return resolve_url('blog:post_list')
 
     def form_valid(self,form):
+        super(LoginView, self).form_valid(form)
         logger.debug('Login Success!!')
         auth_login(self.request, form.get_user())
+        return redirect(self.get_success_url())
+
+    def form_invalid(self,form):
+        logger.debug('form_invalid : %s'%form)
         return redirect(self.get_success_url())
 
 def index(request):
