@@ -328,3 +328,73 @@ LoginForm - clean
 user_cache : 12345678
 cleaned_data : {'student_number': '12345678', 'password': 'whgkswnqkqh'}
 Login Success!!
+signup View GET
+LoginForm - clean
+00000000,whgkswnqkqh
+user_cache : 00000000
+cleaned_data : {'student_number': '00000000', 'password': 'whgkswnqkqh'}
+Login Success!!
+LoginForm - clean
+None,None
+cleaned_data : {}
+form_invalid : <tr><th><label for="id_student_number">Student Number:</label></th><td><ul class="errorlist"><li>This field is required.</li></ul><input type="text" name="student_number" required id="id_student_number"></td></tr>
+<tr><th><label for="id_password">Password:</label></th><td><ul class="errorlist"><li>This field is required.</li></ul><input type="password" name="password" required id="id_password"></td></tr>
+signup View GET
+LoginForm - clean
+00000000,whgkswnqkqh
+user_cache : 00000000
+cleaned_data : {'student_number': '00000000', 'password': 'whgkswnqkqh'}
+Login Success!!
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup POST
+Signup form.isvalid() in
+signup View GET
+signup View GET
+signup POST
+Signup form.isvalid() in
+LoginForm - clean
+12345678,whgkswnqkqh
+user_cache : 12345678
+cleaned_data : {'student_number': '12345678', 'password': 'whgkswnqkqh'}
+Login Success!!
+LoginForm - clean
+00000001,조한주바보
+user_cache : None
+LoginForm - clean
+00000001,whgkswnqkqh
+user_cache : None
+LoginForm - clean
+00000000,whgkswnqkqh
+user_cache : 00000000
+cleaned_data : {'student_number': '00000000', 'password': 'whgkswnqkqh'}
+Login Success!!
+LoginForm - clean
+12345678,whgkswnqkqh
+user_cache : 12345678
+cleaned_data : {'student_number': '12345678', 'password': 'whgkswnqkqh'}
+Login Success!!
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET

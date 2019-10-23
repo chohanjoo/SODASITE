@@ -120,9 +120,9 @@ class MyLoginView(LoginView):
         auth_login(self.request, form.get_user())
         return redirect(self.get_success_url())
 
-    def form_invalid(self,form):
-        logger.debug('form_invalid : %s'%form)
-        return redirect(self.get_success_url())
+    # def form_invalid(self,form):
+    #     logger.debug('form_invalid : %s'%form)
+    #     return redirect(self.get_success_url())
 
 def index(request):
     return render(request,'blog/index.html')
