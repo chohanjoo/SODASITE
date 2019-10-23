@@ -212,4 +212,4 @@ SUMMERNOTE_CONFIG = {
 
 AUTH_USER_MODEL = 'accounts.User'
 
-ADMIN_EMAIL = 'johanjoo@naver.com'
+ADMIN_EMAIL = 'your email'
