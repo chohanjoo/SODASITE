@@ -1533,10 +1533,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .entries .col-block {
   -webkit-box-flex: 0 0 3%;
-  -moz-box-flex: 0 0 33%;
-  -webkit-flex: 0 0 33%;
-  -ms-flex: 0 0 33%;
-  flex: 0 0 33%;
+  -moz-box-flex: 0 0 25%;
+  -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
   max-width: 100%;
   padding: 0 20px;
   margin-bottom: 4.2rem;

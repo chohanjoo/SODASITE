@@ -3,6 +3,17 @@
 
 
 {% block content %}
+<style>
+    .my-image {
+        width: 25px;
+        height: auto;
+    }
+
+    .post-image {
+        height: 300px;
+        width: 370px;
+    }
+</style>
 <!-- s-content
     ================================================== -->
 <section class="s-content s-content--top-padding">
@@ -20,12 +31,29 @@
             <article class="col-block">
 
                 <div class="item-entry" data-aos="zoom-in">
+                    <div class="item-entry__thumb">
+                        <a href="{% url 'blog:post_detail' post.pk %}" class="item-entry__thumb-link">
+                            <img class="post-image" src="{% static 'images/default.png' %}"
+                                srcset="{% static 'images/default.png' %}" alt="">
+                        </a>
+
+                    </div>
                     <div class="item-entry__text">
                         <div class="item-entry__cat">
                             <p></p>
                         </div>
 
-                        <div class="item-entry__thumb">{{ user.profile}}</div>
+
+                        <div class="item-entry__cat">
+                            {% if user.profile.photo %}
+                            <img class="my-image" src="{{ user.profile.photo.url }}" alt="">
+                            {% else %}
+                            <img class="my-image" src="{% static 'images/default_profile.jpg' %}" alt="">
+                            {% endif %}
+
+                            &nbsp
+                            {{ user.profile}}
+                        </div>
 
                         <h1 class="item-entry__title"><a
                                 href="{% url 'blog:post_detail' post.pk %}">{{ post.title }}</a>

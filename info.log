@@ -365,3 +365,36 @@ LoginForm - clean
 user_cache : 12345678
 cleaned_data : {'student_number': '12345678', 'password': 'whgkswnqkqh'}
 Login Success!!
+LoginForm - clean
+00000001,조한주바보
+user_cache : None
+LoginForm - clean
+00000001,whgkswnqkqh
+user_cache : None
+LoginForm - clean
+00000000,whgkswnqkqh
+user_cache : 00000000
+cleaned_data : {'student_number': '00000000', 'password': 'whgkswnqkqh'}
+Login Success!!
+LoginForm - clean
+12345678,whgkswnqkqh
+user_cache : 12345678
+cleaned_data : {'student_number': '12345678', 'password': 'whgkswnqkqh'}
+Login Success!!
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
+signup View GET
