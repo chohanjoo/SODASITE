@@ -3,6 +3,17 @@
 
 
 {% block content %}
+<style>
+    .my-image {
+        width: 25px;
+        height: auto;
+    }
+
+    .post-image {
+        height: 300px;
+        width: 370px;
+    }
+</style>
 <!-- s-content
     ================================================== -->
 <section class="s-content s-content--top-padding">
@@ -19,16 +30,33 @@
             {% for post in post_list%}
             <article class="col-block">
 
-                
                 <div class="item-entry" data-aos="zoom-in">
-                    
+                    <div class="item-entry__thumb">
+                        <a href="{% url 'blog:post_detail' post.pk %}" class="item-entry__thumb-link">
+                            <img class="post-image" src="{% static 'images/default.png' %}"
+                                srcset="{% static 'images/default.png' %}" alt="">
+                        </a>
 
+                    </div>
                     <div class="item-entry__text">
                         <div class="item-entry__cat">
-                         
+                            <p></p>
                         </div>
 
-                        <h1 class="item-entry__title"><a href="{% url 'blog:post_detail' post.pk %}">{{ post.title }}</a>
+
+                        <div class="item-entry__cat">
+                            {% if user.profile.photo %}
+                            <img class="my-image" src="{{ user.profile.photo.url }}" alt="">
+                            {% else %}
+                            <img class="my-image" src="{% static 'images/default_profile.jpg' %}" alt="">
+                            {% endif %}
+
+                            &nbsp
+                            {{ user.profile}}
+                        </div>
+
+                        <h1 class="item-entry__title"><a
+                                href="{% url 'blog:post_detail' post.pk %}">{{ post.title }}</a>
                         </h1>
 
                         <div class="item-entry__date">
@@ -44,85 +72,69 @@
 
 
         </div> <!-- end entries -->
+        {% if user.is_authenticated %}
+        <div class="clearfix">
+            <a class="btn btn--primary pull-right" href="{% url "blog:new_post" %}">New Post</a>
+        </div>
     </div> <!-- end entries-wrap -->
-    {% if user.is_authenticated %}
-    <div class="clearfix">
-        <a class="btn btn--primary pull-right" href="{% url "blog:new_post" %}">New Post</a>
-</div>
-{% endif %}
+
+    {% endif %}
     {% if is_paginated %}
     <div class="row pagination-wrap">
-            <div class="col-full">
-    <nav class="pgn" data-aos="fade-up">
-        <ul class="pagination justify-content-center pagination-sm">
-            
-            {% if page_obj.has_previous %}
-            <!-- If it ain't a search result display, don't append the search query
-                     to the URL. -->
-            {% if not search %}
-            <li class="page-item">
-                <a class="pgn__prev" href="{% url 'blog:post_list' %}?page={{ page_obj.previous_page_number }}"
-                    tabindex="-1">Prev</a>
-            </li>
-            {% else %}
-            <!-- Append the searched query to the URL, so that on a search results page,
-                     the pagination don't revert to listing all the listview items. -->
-            <li class="page-item">
-                <a class="pgn__prev"
-                    href="{% url 'blog:post_list' %}?{{search}}&page={{ page_obj.previous_page_number }}"
-                    tabindex="-1">Prev</a>
-            </li>
-            {% endif %}
-            {% else %}
-            <li class="page-item disabled">
-                <a class="pgn__prev" href="#" tabindex="-1">Prev</a>
-            </li>
-            {% endif %}
-            {% for object in page_obj.paginator.page_range %}
-            <li class="page-item"><a class="pgn__num"
-                    href="{% url 'blog:post_list' %}?page={{ forloop.counter }}">{{ forloop.counter }}</a></li>
-            {% endfor %}
-            {% if page_obj.has_next %}
-            {% if not search %}
-            <li class="page-item">
-                <a class="pgn__next" href="{% url 'blog:post_list' %}?page={{ page_obj.next_page_number }}">Next</a>
-            </li>
-            {% else %}
-            <li class="page-item">
-                <a class="pgn__next"
-                    href="{% url 'blog:post_list' %}?{{search}}&page={{ page_obj.next_page_number }}">Next</a>
-            </li>
-            {% endif %}
-            {% else %}
-            <li class="page-item disabled">
-                <a class="pgn__next" href="#">Next</a>
-            </li>
-            {% endif %}
-        </ul>
-    </nav>
-    
-</div>
-</div>
-    {% endif %}
-    
-
-    <!-- <div class="row pagination-wrap">
         <div class="col-full">
             <nav class="pgn" data-aos="fade-up">
-                <ul>
-                    <li><a class="pgn__prev" href="#0">Prev</a></li>
-                    <li><a class="pgn__num" href="#0">1</a></li>
-                    <li><span class="pgn__num current">2</span></li>
-                    <li><a class="pgn__num" href="#0">3</a></li>
-                    <li><a class="pgn__num" href="#0">4</a></li>
-                    <li><a class="pgn__num" href="#0">5</a></li>
-                    <li><span class="pgn__num dots">…</span></li>
-                    <li><a class="pgn__num" href="#0">8</a></li>
-                    <li><a class="pgn__next" href="#0">Next</a></li>
+                <ul class="pagination justify-content-center pagination-sm">
+
+                    {% if page_obj.has_previous %}
+                    <!-- If it ain't a search result display, don't append the search query
+                     to the URL. -->
+                    {% if not search %}
+                    <li class="page-item">
+                        <a class="pgn__prev" href="{% url 'blog:post_list' %}?page={{ page_obj.previous_page_number }}"
+                            tabindex="-1">Prev</a>
+                    </li>
+                    {% else %}
+                    <!-- Append the searched query to the URL, so that on a search results page,
+                     the pagination don't revert to listing all the listview items. -->
+                    <li class="page-item">
+                        <a class="pgn__prev"
+                            href="{% url 'blog:post_list' %}?{{search}}&page={{ page_obj.previous_page_number }}"
+                            tabindex="-1">Prev</a>
+                    </li>
+                    {% endif %}
+                    {% else %}
+                    <li class="page-item disabled">
+                        <a class="pgn__prev" href="#" tabindex="-1">Prev</a>
+                    </li>
+                    {% endif %}
+                    {% for object in page_obj.paginator.page_range %}
+                    <li class="page-item"><a class="pgn__num"
+                            href="{% url 'blog:post_list' %}?page={{ forloop.counter }}">{{ forloop.counter }}</a></li>
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                    {% if not search %}
+                    <li class="page-item">
+                        <a class="pgn__next"
+                            href="{% url 'blog:post_list' %}?page={{ page_obj.next_page_number }}">Next</a>
+                    </li>
+                    {% else %}
+                    <li class="page-item">
+                        <a class="pgn__next"
+                            href="{% url 'blog:post_list' %}?{{search}}&page={{ page_obj.next_page_number }}">Next</a>
+                    </li>
+                    {% endif %}
+                    {% else %}
+                    <li class="page-item disabled">
+                        <a class="pgn__next" href="#">Next</a>
+                    </li>
+                    {% endif %}
                 </ul>
             </nav>
+
         </div>
-    </div> -->
+    </div>
+    {% endif %}
+
 
 </section> <!-- end s-content -->
 
