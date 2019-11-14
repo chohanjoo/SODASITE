@@ -2,6 +2,18 @@
 소프트웨어 공개 소프트웨어 소모임 SODA 공식 홈페이지
 
 
+### 배포시 수정해야 할 사항
+
+* sodasite/settings.py
+
+1. EMAIL_HOST_USER = 관리자 이메일
+
+2. EMAIL_HOST_PASSWORD = 관리자 이메일 비밀번호
+
+3. DEBUG = False
+
+4. ADMIN_EMAIL = 관리자 이메일
+
 
 ### 도커 이미지
 

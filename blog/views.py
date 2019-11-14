@@ -22,7 +22,7 @@ class ProjectListVew(ListView):
     context_object_name = 'post_list'   # your own name for the list as a template variable
     queryset = Project.objects.all().order_by('-id')
 
-    paginate_by = 8
+    paginate_by = 12
  
     def get_queryset(self, *args, **kwargs):
         if self.kwargs:

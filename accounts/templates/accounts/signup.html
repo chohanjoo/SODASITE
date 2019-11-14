@@ -2,74 +2,78 @@
 
 {% load static %}
 
+{% block head %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<style type="text/css">
+    .input[type=text] {
+        -webkit-ime-mode: inactive;
+        -moz-ime-mode: inactive;
+        -ms-ime-mode: inactive;
+        ime-mode: inactive;
+    }
+</style>
+
+{% endblock %}
 
 {% block content %}
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
 <section class="s-content s-content--top-padding">
-<div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="row-custom">
+                <aside class="col">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <div class="card">
+                            <article class="card-body">
+                                <h2 class="card-title text-center mb-4 mt-1">Sign Up</h2>
+                                <hr>
+                                <p class="text-success text-center">Fill in the blanks below.</p>
 
-    <div class="row">
-        <aside class="col-sm-5">
+                                <fieldset>
 
-        </aside> <!-- col.// -->
-        <aside class="col-sm-4">
-            <br><br><br><br>
-            <form action="" method="POST">
-                {% csrf_token %}
-                <div class="card">
-                    <article class="card-body">
-                        <h2 class="card-title text-center mb-4 mt-1">Sign Up</h2>
-                        <hr>
-                        <p class="text-success text-center">Fill in the blanks below.</p>
+                                    <div class="form-group">
+                                        <input type="text" name="username" id="username" class="form-control input-lg full-width"
+                                            placeholder="Username">
+                                    </div>
 
-                        <fieldset>
+                                    <div class="form-group">
+                                        <input type="text" name="student_number" id="student_number"
+                                            class="form-control input-lg full-width" placeholder="Studnet Number">
+                                    </div>
 
-                            <div class="form-group">
-                                <input type="text" name="username" id="username" class="form-control input-lg"
-                                    placeholder="username">
-                            </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" class="form-control input-lg full-width"
+                                            placeholder="Email Address">
+                                    </div>
 
-                            <!-- <div class="form-group">
-                                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address">
-                            </div> -->
-                            <div class="form-group">
-                                <input type="password" name="password1" id="password1" class="form-control input-lg"
-                                    placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" name="password2" id="password2" class="form-control input-lg"
-                                    placeholder="Password2">
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input">
-                                    By Clicking register you're agree to our policy & terms
-                                </label>
-                            </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password1" id="password1"
+                                            class="form-control input-lg full-width" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password2" id="password2"
+                                            class="form-control input-lg full-width" placeholder="Password2">
+                                    </div>
 
-                        </fieldset>
+                                </fieldset>
 
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block"> Submit </button>
-                        </div> <!-- form-group// -->
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn--primary btn-block full-width"> Submit </button>
+                                </div> <!-- form-group// -->
 
 
 
-                    </article>
-                </div> <!-- card.// -->
-            </form>
-        </aside> <!-- col.// -->
-    </div> <!-- row.// -->
+                            </article>
+                        </div> <!-- card.// -->
+                    </form>
+                </aside> <!-- col.// -->
+            </div> <!-- row.// -->
+        </div>
+    </div>
 
-</div>
-<!--container end.//-->
-</section>
-<br><br><br>
+    <br><br><br>
+
+</section> <!-- end s-content -->
 
 {% endblock %}

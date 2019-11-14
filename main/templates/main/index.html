@@ -4,6 +4,17 @@
 
 
 {% block content %}
+<style>
+.my-image {
+    width: 25px;
+    height: auto;
+}
+.post-image {
+    height: 300px;
+    width: 370px;
+}
+</style>
+
 <!-- featured 
     ================================================== -->
 <section class="s-featured">
@@ -15,13 +26,8 @@
                 <div class="featured__slide">
                     <div class="entry">
 
-                        <!-- {% if post.photo %}
-                                <div class="entry__background" style="background-image:url('{{ post.photo.url }}');"></div>
-                                    {% else %} -->
                         <div class="entry__background"
                             style="background-image:url('{% static 'images/default.png' %}');"></div>
-                        <!-- {% endif %} -->
-
 
                         <div class="entry__content">
                             <!-- <span class="entry__category">Project</span> -->
@@ -70,10 +76,28 @@
 
                 <div class="item-entry" data-aos="zoom-in">
 
+                        <div class="item-entry__thumb">
+                                <a href="{% url 'blog:post_detail' post.pk %}" class="item-entry__thumb-link">
+                                    <img class="post-image" src="{% static 'images/default.png' %}"
+                                        srcset="{% static 'images/default.png' %}" alt="">
+                                </a>
+        
+                            </div>
                     <div class="item-entry__text">
                         <div class="item-entry__cat">
                             
                         </div>
+
+                        <div class="item-entry__cat">
+                                {% if user.profile.photo %}
+                                <img class="my-image" src="{{ user.profile.photo.url }}" alt="">
+                                {% else %}
+                                <img class="my-image" src="{% static 'images/default_profile.jpg' %}" alt="">
+                                {% endif %}
+                                
+                                &nbsp
+                                {{ user.profile}}
+                            </div>
 
                         <h1 class="item-entry__title"><a
                                 href="{% url 'blog:post_detail' post.pk %}">{{ post.title }}</a>

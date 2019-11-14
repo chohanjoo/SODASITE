@@ -5,10 +5,6 @@ from . import views
 # app_name = 'accounts'
 
 urlpatterns = [
-    # path('register',  views.UserCreateView, name='register'),
-    # path('register/done', views.UserCreateDoneTV, name='register_done'),
-    # path('login', views.MyLoginView.as_view(), name='login'),
-    # path('logout', auth_views.LogoutView.as_view(), name='logout'),
     path('signup/', views.signup, name="signup"),
     path('login/',views.MyLoginView.as_view(),name='login'),
     path('logout/', auth_views.LogoutView.as_view(),name='logout'),
