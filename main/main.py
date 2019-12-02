@@ -4,6 +4,8 @@
 from sanic import Sanic
 from sanic_session import InMemorySessionInterface
 from sanic_jinja2 import SanicJinja2
+from sanic import response
+
 
 app = Sanic()
 
@@ -37,6 +39,15 @@ async def index(request):
     request["session"]["user"] = "session user"
     return jinja.render("index.html", request, greetings="Hello, sanic!")
 
+# @app.route("/blog")
+# async def blog(request):
+#     return response.json({'message': 'Hello world!'})
+    # request["flash"]("success message", "success")
+    # request["flash"]("info message", "info")
+    # request["flash"]("warning message", "warning")
+    # request["flash"]("error message", "error")
+    # request["session"]["user"] = "session user"
+    # return jinja.render("single.html", request, greetings="Hello, sanic!")
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=9000, debug=True)
