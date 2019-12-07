@@ -10,4 +10,4 @@ RUN pip3 install -r requirements.txt
 
 EXPOSE 80
 
-CMD ["python3", "manage.py", "runserver"]
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:80", "--settings=sodasite.settings.prod"]

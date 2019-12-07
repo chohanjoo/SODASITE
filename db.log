@@ -4289,3 +4289,13 @@ ALTER TABLE "new__auth_group" RENAME TO "auth_group"; (params ())
 (0.000) SELECT "accounts_profile"."user_id", "accounts_profile"."photo", "accounts_profile"."intro", "accounts_profile"."website" FROM "accounts_profile" WHERE "accounts_profile"."user_id" = 15; args=(15,)
 (0.000) SELECT "accounts_user"."id", "accounts_user"."password", "accounts_user"."last_login", "accounts_user"."email", "accounts_user"."username", "accounts_user"."student_number", "accounts_user"."date_joined", "accounts_user"."is_active", "accounts_user"."is_staff", "accounts_user"."is_superuser" FROM "accounts_user" WHERE "accounts_user"."id" = 15; args=(15,)
 (0.000) SELECT "blog_project"."id", "blog_project"."title", "blog_project"."writer_id", "blog_project"."content", "blog_project"."photo", "blog_project"."project_file", "blog_project"."created_at", "blog_project"."updated_at" FROM "blog_project" ORDER BY "blog_project"."id" DESC  LIMIT 12; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
