@@ -1,4 +1,4 @@
-# SODASITE 
+# SODASITE
 [![Run on Ainize](https://ainize.ai/static/images/run_on_ainize_button.svg)](https://ainize.web.app/redirect?git_repo=github.com/chohanjoo/SODASITE)
 
 소프트웨어 공개 소프트웨어 소모임 SODA 공식 홈페이지
@@ -41,7 +41,7 @@ $ sudo docker run --rm -it -p 8000:8000 sodasite/sodasite:v?
 
 3. ```localhost:8000```에서 실행중임을 확인할 수 있다.
 
-4. 이미지가 잘 동작함을 확인했으므로 만든 이미지를 도커 허브에 올린다. 
+4. 이미지가 잘 동작함을 확인했으므로 만든 이미지를 도커 허브에 올린다.
 
    **태그를 꼭 명시해준다.**
 
@@ -91,10 +91,3 @@ $ sudo docker run -d -p 8000:8000 sodasite/sodasite:v?
 그럼 ```http://<public IP>:8000```로 웹에서 확인이 가능하다.
 
 d옵션으로 백그라운드에서 컨테이너가 운영중이므로 언제, 어디서든 접속이 가능하다.
-<<<<<<< HEAD
-
-
-### Jenkins webhook 등록
-CI/CD를 위한 jenkins webhook 등록이다.
-=======
->>>>>>> upstream/master
